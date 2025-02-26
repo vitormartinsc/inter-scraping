@@ -6,6 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 import os
 import time
+import pandas as pd
 
 service = Service("C://Users//servi//inter-scraping//chromedriver-win64//chromedriver-win64//chromedriver.exe")
 chrome_profile_path = r'C:\Users\servi\AppData\Local\Google\Chrome\User Data\Default'
@@ -73,19 +74,25 @@ def download_and_wait(download_dir, timeout=300):
 
     print("Timeout ao esperar pelo download do arquivo.")
     return None
-        
 
-linhas = driver.find_elements(By.XPATH, "//table[@id='tabelaClientes']/tbody/tr")
-
-files = []
+dfs = []
+download_dir = r'C:\Users\servi\Downloads'
 
 while True:
+    linhas = driver.find_elements(By.XPATH, "//table[@id='tabelaClientes']/tbody/tr")
+
     for linha in linhas:
         linha.click()
         change_date_and_search('01/02/2025')
-        new_file = download_and_wait(download_dir=r'C:\Users\servi\Downloads')
+        new_file = download_and_wait(download_dir=download_dir)
+        id = linha.find_element(By.XPATH, ".//td[2]").text
+        name = linha.find_element(By.XPATH, ".//td[3]").text
         if new_file:
-            files.append(new_file)
+            file_path= os.path.join(download_dir, new_file)
+            df = pd.read_csv(file_path, sep=';')
+            df['cpf/cnpj'] = id
+            df['name'] = name
+            dfs.append(df)
         change_window()
         time.sleep(1)
     
@@ -94,9 +101,9 @@ while True:
     )
     if 'disabled' in next_button_li.get_attribute('class'):
         break
+    
     next_button = next_button_li.find_element(By.TAG_NAME, "a")
     next_button.click()
 
         
-    
 
