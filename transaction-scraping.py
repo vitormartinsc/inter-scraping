@@ -32,13 +32,13 @@ def change_window():
     
     link_pesquisa.click()
     
-def change_date_and_search(new_date):
+def change_date_and_search(initial_date, end_date):
     # Espera o input de data estar visível e interagível
     data_input = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.ID, "DataInicio"))
     )
     data_input.clear()
-    data_input.send_keys(new_date)
+    data_input.send_keys(initial_date)
 
     # Espera o botão de pesquisar estar visível e clicável
     search_button = WebDriverWait(driver, 10).until(
@@ -75,7 +75,7 @@ def download_and_wait(download_dir, timeout=300):
     print("Timeout ao esperar pelo download do arquivo.")
     return None
 
-dfs = []
+data = {'cpf/cnpj': [], 'name': [], 'value': []}
 download_dir = r'C:\Users\servi\Downloads'
 
 while True:
@@ -83,16 +83,21 @@ while True:
 
     for linha in linhas:
         linha.click()
-        change_date_and_search('01/02/2025')
+        change_date_and_search(initial_date='25/02/2025', end_date='26/02/2025')
         new_file = download_and_wait(download_dir=download_dir)
         id = linha.find_element(By.XPATH, ".//td[2]").text
         name = linha.find_element(By.XPATH, ".//td[3]").text
         if new_file:
             file_path= os.path.join(download_dir, new_file)
             df = pd.read_csv(file_path, sep=';')
-            df['cpf/cnpj'] = id
-            df['name'] = name
-            dfs.append(df)
+            aprovada_df = df[df['Status'] == "Aprovada"]
+            aprovada_df['Valor'] = aprovada_df['Valor'].str.replace(',', '.').astype(float)
+            total_value = aprovada_df['Valor'].sum()
+            if total_value != 2 and total_value > 0:
+                data['cpf/cnpj'].append(id)
+                data['value'].append(total_value)
+                data['name'].append(name)
+
         change_window()
         time.sleep(1)
     
