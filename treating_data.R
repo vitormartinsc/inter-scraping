@@ -32,13 +32,13 @@ load_packages <- function() {
 }
 
 load_packages()
+library(googlesheets4)
 
 setwd("C:/Users/servi/inter-scraping/")
 
 db = read_csv('data.csv')
 
 db %>% 
-  select(-1) %>% 
   rename(Nome = name) %>% 
   distinct(`cpf/cnpj`, date, .keep_all = T) %>% 
   group_by(`cpf/cnpj`) %>% 
@@ -49,7 +49,7 @@ db %>%
   spread(date, value) -> db_transformed
 
 sheet_id = "1xifF_tAlbRp7kHBQyDqehH2kfyv-KxRXZBHVmGcA5qU"
-sheet_write(db_transformed, ss = sheet_id, sheet = "TPV Diário")
+sheet_write(db_transformed, ss = sheet_id, sheet = "Database TPV")
 
 
   

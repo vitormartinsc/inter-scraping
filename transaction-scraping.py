@@ -51,9 +51,12 @@ def change_date_and_search(initial_date, end_date):
     return True
         
 def download_and_wait(download_dir, timeout=300):
-    botao_exportar = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.ID, "btdlTransacoes"))
-    )
+    try:
+        botao_exportar = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, "btdlTransacoes"))
+        )
+    except:
+        time.sleep(1)
     
     if 'disabled' in botao_exportar.get_attribute('class'): 
         return None
@@ -86,8 +89,10 @@ def search_by_cpf_cnpj(cpf_cnpj):
     search_button.click()
 
 download_dir = r'C:\Users\servi\Downloads'
+initial_date = '05/02/2025'
+end_date = '06/03/2025'
 
-def loop_in_lines(download_dir):
+def loop_in_lines(download_dir, initial_date, end_date):
     data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
     
     while True:
@@ -106,8 +111,6 @@ def loop_in_lines(download_dir):
                 linhas = driver.find_elements(By.XPATH, "//table[@id='tabelaClientes']/tbody/tr")
                 continue  
             
-            initial_date = '27/02/2025'
-            end_date = '03/03/2025'
             change_date_and_search(initial_date=initial_date, end_date=end_date)
             new_file = download_and_wait(download_dir=download_dir)
 
@@ -150,8 +153,8 @@ def loop_in_lines(download_dir):
         
         next_button = next_button_li.find_element(By.TAG_NAME, "a")
         next_button.click()
-
-transaction_data = loop_in_lines(download_dir)
+        
+transaction_data = loop_in_lines(download_dir, initial_date, end_date)
 
 cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
 cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
@@ -161,7 +164,7 @@ cpf_cnpj_transaction_data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []
 for cpf_cnpj in cpf_cnpj_data:
     if cpf_cnpj not in transaction_data['cpf/cnpj']:
         search_by_cpf_cnpj(cpf_cnpj)
-        user_data = loop_in_lines(download_dir)  
+        user_data = loop_in_lines(download_dir, initial_date, end_date)  
 
         for key in cpf_cnpj_transaction_data:
             cpf_cnpj_transaction_data[key].extend(user_data.get(key, []))
