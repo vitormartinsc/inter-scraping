@@ -36,9 +36,14 @@ library(googlesheets4)
 
 setwd("C:/Users/servi/inter-scraping/")
 
-db = read_csv('data.csv')
 
-db %>% 
+sheet_id = "1xifF_tAlbRp7kHBQyDqehH2kfyv-KxRXZBHVmGcA5qU"
+db <- read_sheet(sheet_id, sheet = "Database TPV")
+
+new_db = read_csv('data.csv')
+
+new_db %>% 
+  filter(value > 0) %>% 
   rename(Nome = name) %>% 
   distinct(`cpf/cnpj`, date, .keep_all = T) %>% 
   group_by(`cpf/cnpj`) %>% 
@@ -48,8 +53,21 @@ db %>%
   select(-had_transacitons) %>% 
   spread(date, value) -> db_transformed
 
-sheet_id = "1xifF_tAlbRp7kHBQyDqehH2kfyv-KxRXZBHVmGcA5qU"
-sheet_write(db_transformed, ss = sheet_id, sheet = "Database TPV")
+db_transformed %>% 
+  full_join(db) %>% 
+  select(`cpf/cnpj`, Nome, all_of(sort(names(.)[-c(1,2)]))) %>%  # Corrigindo select()
+  mutate(across(where(is.numeric), ~ ifelse(is.na(.), 0, .))) %>% 
+  gather(date, value, -Nome, -`cpf/cnpj`) %>% 
+  filter(date <= today()) %>% 
+  distinct(value, date, `cpf/cnpj`, .keep_all = T) %>% 
+  group_by(date, `cpf/cnpj`) %>% 
+  filter(value == max(value)) %>% 
+  ungroup %>% 
+  spread(date, value) %>%
+  arrange(Nome) -> db_final
+  
+
+sheet_write(db_final, ss = sheet_id, sheet = "Database TPV")
 
 
   
