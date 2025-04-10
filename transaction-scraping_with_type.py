@@ -8,6 +8,9 @@ import os
 import time
 import pandas as pd
 
+# pasta inter scraping
+os.chdir('C:\\Users\\servi\\inter-scraping')
+
 #service = Service("C://Users//servi//inter-scraping//chromedriver-win64//chromedriver-win64//chromedriver.exe")
 options = Options()
 # Comente a linha abaixo se quiser VER o navegador aberto (para testar)
@@ -21,7 +24,7 @@ wait = WebDriverWait(driver, 10)
 """
 https://gestao.granitopagamentos.com.br/Login/Index
 sandro.leao@creditoessencial.com.br
-11S@ndr01003
+1011S@ndr0310
 """
 
 def change_window():
@@ -88,8 +91,8 @@ def search_by_cpf_cnpj(cpf_cnpj):
     search_button.click()
 
 download_dir = r'C:\Users\servi\Downloads'
-initial_date = '02/02/2025'
-end_date = '01/03/2025'
+initial_date = '01/03/2025'
+end_date = '02/03/2025'
 
 def loop_in_lines(download_dir, initial_date, end_date):
     data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
@@ -122,7 +125,7 @@ def loop_in_lines(download_dir, initial_date, end_date):
                 aprovada_df['Valor'] = aprovada_df['Valor'].str.replace('.', '').str.replace(',', '.').astype(float)
                 aprovada_df['Data e hora'] = pd.to_datetime(aprovada_df['Data e hora'], dayfirst=True)
                 aprovada_df['Data'] = aprovada_df['Data e hora'].dt.date
-                resultado = aprovada_df.groupby(['Data', 'Tipo'])['Valor'].sum()
+                resultado = aprovada_df.groupby(['Data', 'Tipo', 'Numero Parcelas'])['Valor'].sum()
 
                 for date, total_value in resultado.items():
                     data['cpf/cnpj'].append(id)
@@ -154,6 +157,8 @@ def loop_in_lines(download_dir, initial_date, end_date):
         next_button.click()
         
 transaction_data = loop_in_lines(download_dir, initial_date, end_date)
+#transaction_data = pd.read_csv('data.csv').iloc[:, 1:].to_dict()
+
 
 cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
 cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
@@ -172,4 +177,4 @@ by_id_df = pd.DataFrame(cpf_cnpj_transaction_data)
 by_loop_df = pd.DataFrame(transaction_data)
 
 all_data = pd.concat([by_id_df, by_loop_df], ignore_index=True)  # Corrigido
-all_data.to_csv('data.csv', index=False)
+all_data.to_csv('data_04.csv', index=False)

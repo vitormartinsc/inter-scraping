@@ -96,7 +96,7 @@ db_inter %>%
 
 df2 %>% 
   left_join(db_inter_concat, by = 'name_normalized') %>% 
-  View
+  writexl::write_xlsx('equipment_data_with_tpv.xlsx')
 
 
 
