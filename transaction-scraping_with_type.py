@@ -4,7 +4,6 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import NoSuchElementException, ElementClickInterceptedException
 import os
 import time
 import pandas as pd
@@ -89,8 +88,8 @@ def search_by_cpf_cnpj(cpf_cnpj):
     search_button.click()
 
 download_dir = r'C:\Users\servi\Downloads'
-initial_date = '06/03/2025'
-end_date = '07/03/2025'
+initial_date = '02/02/2025'
+end_date = '01/03/2025'
 
 def loop_in_lines(download_dir, initial_date, end_date):
     data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
@@ -123,7 +122,7 @@ def loop_in_lines(download_dir, initial_date, end_date):
                 aprovada_df['Valor'] = aprovada_df['Valor'].str.replace('.', '').str.replace(',', '.').astype(float)
                 aprovada_df['Data e hora'] = pd.to_datetime(aprovada_df['Data e hora'], dayfirst=True)
                 aprovada_df['Data'] = aprovada_df['Data e hora'].dt.date
-                resultado = aprovada_df.groupby('Data')['Valor'].sum()
+                resultado = aprovada_df.groupby(['Data', 'Tipo'])['Valor'].sum()
 
                 for date, total_value in resultado.items():
                     data['cpf/cnpj'].append(id)

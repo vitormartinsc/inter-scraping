@@ -36,62 +36,140 @@ library(googlesheets4)
 library(googledrive)
 library(openxlsx)
 
-setwd("C:/Users/servi/inter-scraping/")
+setwd("C:/Users/Hernane Flecha/inter-scraping/")
 
-
-
-sheet_name <- "Base (inter)"  # Nome da sheet que será alterada
+sheet_id = '1t5e_LE6nGKMh25WWA-LuW2krzL-Wdw4xkHTYXnEvv44'
 
 # 📥 Baixa o arquivo Excel do Google Drive
 temp_file <- tempfile(fileext = ".xlsx")
 drive_download(as_id(sheet_id), path = temp_file, overwrite = TRUE)
 
+#### ATUALIZANDO O INTER
+
+sheet_name <- "Base inter"  # Nome da sheet que será alterada
+
 # 📖 Carrega o arquivo Excel inteiro (com todas as sheets)
 wb <- loadWorkbook(temp_file)
 
-db <- read_excel(temp_file, sheet = 'Base (inter)', skip = 3) # Ajuste a aba conforme necessário
+db_inter <- read_excel(temp_file, sheet = sheet_name, skip = 3) # Ajuste a aba conforme necessário
 
+new_db_inter = read_csv('data.csv')
 
-new_db = read_csv('data.csv')
-
-new_db %>% 
+new_db_inter %>% 
   filter(value > 0) %>% 
   rename(Nome = name) %>% 
   distinct(`cpf/cnpj`, date, .keep_all = T) %>% 
   group_by(`cpf/cnpj`) %>% 
-  mutate(had_transacitons = sum(value) > 0,
-         date = format(date, '%d/%m/%Y')) %>% 
+  mutate(
+    had_transacitons = sum(value) > 0,
+    date = format(date, '%d/%m/%Y')
+  ) %>% 
   ungroup %>% 
   filter(had_transacitons) %>% 
-  select(-had_transacitons) %>% 
+  select(-had_transacitons, -Nome) %>% 
   spread(date, value) %>% 
-  select(-2) %>% 
-  rename('CPF ou CNPJ' = 1) -> db_transformed
+  rename('CPF ou CNPJ' = 1) -> new_db_transformed
 
-date_cols <- colnames(db_transformed)[2:ncol(db_transformed)]  # Excluindo a primeira coluna (CNPJ)
+date_cols <- colnames(new_db_transformed)[2:ncol(new_db_transformed)]  # Excluindo a primeira coluna (CNPJ)
+date_cols <- intersect(date_cols, colnames(db_inter))
+
+new_db_transformed %>% 
+  select(1, 2) %>% 
+  spread(1, 2) %>% 
+  as.list() -> cpf_cnpj_list
 
 # Atualizar os valores das colunas de data em db
-db %>%
+db_inter %>% 
   select(-all_of(date_cols)) %>% 
-  left_join(db_transformed, by = 'CPF ou CNPJ') %>% 
+  full_join(new_db_transformed, by = 'CPF ou CNPJ') %>% 
+  rowwise() %>% 
+  mutate(CLIENTE = ifelse(is.na(CLIENTE), cpf_cnpj_list[`CPF ou CNPJ`] %>% unlist %>% toupper(), CLIENTE)) %>% 
+  ungroup %>% 
+  arrange(CLIENTE) %>% 
   gather(date, value, -c(names(.)[1: 5])) %>% 
   mutate(date = dmy(date)) %>% 
   arrange(date) %>% 
   mutate(date = format(date, '%d/%m/%Y')) %>%
-  mutate(date = factor(date, levels = .$date %>% unique),
-         value = as.numeric(value), 
-         `DIAS TRANSACIONADOS` = as.numeric(`DIAS TRANSACIONADOS`),
-         TOTAL = as.numeric(TOTAL)
-         )%>%  
-  spread(date, value) -> db_final
-
+  mutate(
+    date = factor(date, levels = .$date %>% unique),
+    value = as.numeric(value), 
+    `DIAS TRANSACIONADOS` = as.numeric(`DIAS TRANSACIONADOS`),
+    TOTAL = as.numeric(TOTAL)
+  ) %>%  
+  filter(!is.na(date)) %>% 
+  spread(date, value) %>% 
+  mutate(`Nº` = row_number()) -> db_inter_final
 
 
 # 📌 Escreve os dados dentro do intervalo sem apagar o restante
-writeData(wb, sheet = sheet_name, x = db_final, startRow = 4, startCol = 1, colNames = TRUE)
+writeData(wb, sheet = sheet_name, x = db_inter_final, startRow = 4, startCol = 1, colNames = TRUE)
 
 # 💾 Salva as alterações
 saveWorkbook(wb, temp_file, overwrite = TRUE)
 
 # 📤 Reenvia para o Google Drive
 drive_update(as_id(sheet_id), media = temp_file)
+
+#### ATUALIZANDO A OWN
+
+sheet_name <- "Base own"  # Nome da sheet que será alterada
+
+db_own <- read_excel(temp_file, sheet = sheet_name, skip = 2) # Ajuste a aba conforme necessário
+
+new_db_own <- read_csv('Relatório diário.csv')
+
+new_db_own %>% 
+  select(CNPJ Estabelecimento, Data Métrica, VGT) %>% 
+  rename(date = 2, value = 3) %>% 
+  mutate(
+    date = dmy(date),
+    value = value %>% 
+      str_replace(' ', '') %>% 
+      str_replace('R\\$', '') %>% 
+      str_replace('\\.', '') %>% 
+      str_replace(',', '.') %>% 
+      as.numeric(),
+    CNPJ Estabelecimento = as.numeric(CNPJ Estabelecimento)
+  ) %>% 
+  group_by(CNPJ Estabelecimento, date) %>% 
+  summarise(value = sum(value), .groups = 'drop') -> new_db_own_transformed
+
+db_own %>% 
+  gather(date, value, -c(1:6)) %>% 
+  
+  mutate(date = if_else(
+    grepl('/', date), 
+    dmy(date), 
+    as.Date(as.numeric(date), origin = "1899-12-30")
+  ))  %>% 
+  
+  filter(!date %in% unique(new_db_own_transformed$date)) %>% 
+  full_join(new_db_own_transformed) %>% 
+  mutate(value = ifelse(is.na(value), 0, value)) %>% 
+  group_by(CNPJ Estabelecimento) %>% 
+  mutate(
+    Nº = ifelse(is.na(Nº), first(Nº), Nº),
+    ...3 = ifelse(is.na(...3), first(...3), ...3),
+    Nome Fantasia = ifelse(is.na(Nome Fantasia), first(Nome Fantasia), Nome Fantasia),
+    ACM = sum(value),
+  ) %>% 
+  group_by(date, CNPJ Estabelecimento) %>% 
+  mutate(n = ifelse(value > 0, 1, 0)) %>%
+  group_by(CNPJ Estabelecimento) %>% 
+  mutate(Dias Transacionados = sum(n)) %>% 
+  ungroup %>% 
+  select(-n) %>% 
+  arrange(date) %>% 
+  mutate(date = format(date, '%d/%m/%Y')) %>% 
+  mutate(date = factor(date, levels = .$date %>% unique)) %>% 
+  spread(date, value) %>% 
+  mutate_if(is.numeric, ~ifelse(is.na(.), 0, .)) -> db_own_final
+
+# 📌 Escreve os dados dentro do intervalo sem apagar o restante
+writeData(wb, sheet = sheet_name, x = db_own_final, startRow = 3, startCol = 1, colNames = TRUE)
+
+# 💾 Salva as alterações
+saveWorkbook(wb, temp_file, overwrite = TRUE)
+
+# 📤 Reenvia para o Google Drive
+drive_update(as_id(sheet_id), media = temp_file)

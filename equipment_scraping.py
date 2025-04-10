@@ -53,7 +53,8 @@ def loop_in_lines():
     'equipment_id': [], 'pdv': [], 'phone': [], 'email': [],
     'fantasy_name': [], 'branch_of_activity': [], 'cep': [],
     'street_name': [], 'address_number': [], 'address_complement': [], 'neighborhood_name': [],
-    'city_name': [], 'state_name': [], 'status': []
+    'city_name': [], 'state_name': [], 'status': [],
+    'bank_name': [], 'agency': [], 'account_number': [], 'account_dv': [], 'account_type': []
     }
     page = 1
     while True:
@@ -87,7 +88,12 @@ def loop_in_lines():
                 neighborhood_name = get_element_text_by_xpath('//*[@id="Bairro"]')
                 city_name = get_element_text_by_xpath('//*[@id="Cidade"]/option', 'text')
                 state_name = get_element_text_by_xpath('//*[@id="UF"]/option', 'text')
-                
+                bank_name = get_element_text_by_xpath('//*[@id="Banco"]/option', 'text')
+                agency = get_element_text_by_xpath('//*[@id="Agencia"]')
+                account_number = get_element_text_by_xpath('//*[@id="Conta"]')
+                account_dv = get_element_text_by_xpath('//*[@id="ContaDV"]')
+                account_type = get_element_text_by_xpath('//*[@id="TipoConta"]/option', 'text')
+
                 change_window('Equipamentos')
     
                 # Espera até que os elementos estejam disponíveis
@@ -119,8 +125,12 @@ def loop_in_lines():
                             equipment_data['city_name'].append(city_name)
                             equipment_data['state_name'].append(state_name)
                             equipment_data['status'].append(status)
+                            equipment_data['bank_name'].append(bank_name)
+                            equipment_data['agency'].append(agency)
+                            equipment_data['account_number'].append(account_number)
+                            equipment_data['account_dv'].append(account_dv)
+                            equipment_data['account_type'].append(account_type)
 
-    
                         print(f'current_data: {equipment_data}')
     
                         break  # Sai do `while` se tudo der certo
@@ -174,12 +184,11 @@ def search_by_cpf_cnpj(cpf_cnpj):
         except:
             time.sleep(1)
         
-
-
 equipment_data_general = loop_in_lines()
 df = pd.DataFrame(equipment_data_general)
 df.to_csv('equipment_data.csv')
 
+equipment_data_general = pd.read_csv('equipment_data.csv')
 
 cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
 cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
@@ -192,6 +201,13 @@ for cpf_cnpj in cpf_cnpj_data:
 
         cpf_cnpj_equipment_data.append(user_data)
         
-print(cpf_cnpj_equipment_data)
-        
-    
+resultado = {}
+
+for data in cpf_cnpj_equipment_data:
+    for chave, lista_valores in data.items():
+        if chave not in resultado:
+            resultado[chave] = []
+        resultado[chave].extend(lista_valores)
+
+cpf_cnpj_equipment_dataframe = pd.DataFrame(resultado)
+pd.concat([equipment_data_general, cpf_cnpj_equipment_dataframe])

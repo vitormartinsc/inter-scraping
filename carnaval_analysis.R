@@ -13,14 +13,14 @@ for (file in files) {
   
 }
 
-db = plyr::join_all(all_dfs, type = 'full')
+db_all = plyr::join_all(all_dfs, type = 'full')
 
-db %>% 
+db_all %>% 
   select(`Data e hora`, Valor, Tipo, `Numero Parcelas`, Status) %>% 
   distinct(`Data e hora`, Tipo, Valor, .keep_all = T) %>% 
   set_names(c('date', 'value', 'type', 'number', 'status')) %>% 
   mutate(date = substr(date, 1, 10) %>% dmy) %>% 
-  filter(date >= '2025-02-28', status == 'Aprovada') -> db
+  filter(date <= '2025-03-03', status == 'Aprovada') -> db
 
 library(ggplot2)
 library(dplyr)
@@ -118,4 +118,13 @@ ggplot(df_pizza, aes(x = "", y = n, fill = type)) +
     legend.position = "none"  # Oculta a legenda (opcional)
   ) +
   scale_fill_manual(values = rep(cores_vibrantes, length.out = length(unique(df_pizza$type))))  # Aplica cores vibrantes
+
+db %>% filter(status == 'Aprovada') %>% 
+  group_by(type, date) %>% 
+  summarise(value = sum(value), .groups = 'drop') %>% 
+  arrange(date) %>% 
+  mutate(date = format(date, '%d/%m/%Y')) %>% 
+  mutate(date = factor(date, levels = .$date %>% unique)) %>% 
+  spread(date, value) %>% 
+  writexl::write_xlsx('Tpv Carnaval Detalhado.xlsx')
 
