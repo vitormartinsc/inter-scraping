@@ -39,3 +39,5 @@ Mas se preferir outras alternativas de parcelamento, confira nossas opções: �
 
 ✅ Saque de {max_withdrawals[18]} para pagar em 18 parcelas de {installment_values[18]}!
 """)
+
+print('a')
