@@ -36,7 +36,7 @@ library(googlesheets4)
 library(googledrive)
 library(openxlsx)
 
-setwd("C:/Users/Hernane Flecha/inter-scraping/")
+setwd("C:/Users/Vitor/inter-scraping/")
 
 sheet_id = '1t5e_LE6nGKMh25WWA-LuW2krzL-Wdw4xkHTYXnEvv44'
 
@@ -116,10 +116,10 @@ sheet_name <- "Base own"  # Nome da sheet que será alterada
 
 db_own <- read_excel(temp_file, sheet = sheet_name, skip = 2) # Ajuste a aba conforme necessário
 
-new_db_own <- read_csv('Relatório diário.csv')
+new_db_own <- read_csv('relatorio_diario_own.csv')
 
 new_db_own %>% 
-  select(CNPJ Estabelecimento, Data Métrica, VGT) %>% 
+  select(`CNPJ Estabelecimento`, `Data Métrica`, `VGT`) %>% 
   rename(date = 2, value = 3) %>% 
   mutate(
     date = dmy(date),
@@ -129,9 +129,9 @@ new_db_own %>%
       str_replace('\\.', '') %>% 
       str_replace(',', '.') %>% 
       as.numeric(),
-    CNPJ Estabelecimento = as.numeric(CNPJ Estabelecimento)
+    `CNPJ Estabelecimento` = as.numeric(`CNPJ Estabelecimento`)
   ) %>% 
-  group_by(CNPJ Estabelecimento, date) %>% 
+  group_by(`CNPJ Estabelecimento`, date) %>% 
   summarise(value = sum(value), .groups = 'drop') -> new_db_own_transformed
 
 db_own %>% 
@@ -146,17 +146,17 @@ db_own %>%
   filter(!date %in% unique(new_db_own_transformed$date)) %>% 
   full_join(new_db_own_transformed) %>% 
   mutate(value = ifelse(is.na(value), 0, value)) %>% 
-  group_by(CNPJ Estabelecimento) %>% 
+  group_by(`CNPJ Estabelecimento`) %>% 
   mutate(
-    Nº = ifelse(is.na(Nº), first(Nº), Nº),
-    ...3 = ifelse(is.na(...3), first(...3), ...3),
-    Nome Fantasia = ifelse(is.na(Nome Fantasia), first(Nome Fantasia), Nome Fantasia),
+    `Nº` = ifelse(is.na(`Nº`), first(`Nº`), `Nº`),
+    `...3` = ifelse(is.na(`...3`), first(`...3`), `...3`),
+    `Nome Fantasia` = ifelse(is.na(`Nome Fantasia`), first(`Nome Fantasia`), `Nome Fantasia`),
     ACM = sum(value),
   ) %>% 
-  group_by(date, CNPJ Estabelecimento) %>% 
+  group_by(date, `CNPJ Estabelecimento`) %>% 
   mutate(n = ifelse(value > 0, 1, 0)) %>%
-  group_by(CNPJ Estabelecimento) %>% 
-  mutate(Dias Transacionados = sum(n)) %>% 
+  group_by(`CNPJ Estabelecimento`) %>% 
+  mutate(`Dias Transacionados` = sum(n)) %>% 
   ungroup %>% 
   select(-n) %>% 
   arrange(date) %>% 
@@ -172,4 +172,4 @@ writeData(wb, sheet = sheet_name, x = db_own_final, startRow = 3, startCol = 1, 
 saveWorkbook(wb, temp_file, overwrite = TRUE)
 
 # 📤 Reenvia para o Google Drive
-drive_update(as_id(sheet_id), media = temp_file)
+drive_update(as_id(sheet_id), media = temp_file)

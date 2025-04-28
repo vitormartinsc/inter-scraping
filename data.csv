@@ -1,261 +1,673 @@
 cpf/cnpj,name,value,date
-196.090.877-44,José Neves Monteiro,1.3,"(datetime.date(2025, 2, 14), 'Debito', 0)"
-196.090.877-44,José Neves Monteiro,5.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-388.727.143-20,Cícero Elson Carlos da Silva,5.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,55.0,"(datetime.date(2025, 2, 20), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,30.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,25.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,25.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,317.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,66.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,33.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,145.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-020.376.601-62,Amanda da Silva Oliveira,1.0,"(datetime.date(2025, 2, 17), 'Debito', 0)"
-034.269.016-76,Ernandes Rodrigues gomes,2.0,"(datetime.date(2025, 2, 13), 'Debito', 0)"
-707.068.836-91,Vanusa Paulina De Jesus,1.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-707.068.836-91,Vanusa Paulina De Jesus,10.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,45.0,"(datetime.date(2025, 2, 5), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,108.0,"(datetime.date(2025, 2, 5), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,370.0,"(datetime.date(2025, 2, 8), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,500.0,"(datetime.date(2025, 2, 8), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,400.0,"(datetime.date(2025, 2, 9), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1252.0,"(datetime.date(2025, 2, 9), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1100.0,"(datetime.date(2025, 2, 10), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,367.0,"(datetime.date(2025, 2, 10), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,8.0,"(datetime.date(2025, 2, 11), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,50.0,"(datetime.date(2025, 2, 12), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,475.0,"(datetime.date(2025, 2, 12), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,162.0,"(datetime.date(2025, 2, 13), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,250.0,"(datetime.date(2025, 2, 13), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1142.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,263.4,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,700.0,"(datetime.date(2025, 2, 17), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,382.0,"(datetime.date(2025, 2, 19), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,200.0,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,60.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,427.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,16.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,255.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,193.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,331.25,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-010.785.306-02,Edenilton Pereira da Silva,2.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-010.785.306-02,Edenilton Pereira da Silva,25.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-010.785.306-02,Edenilton Pereira da Silva,3.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-010.785.306-02,Edenilton Pereira da Silva,53.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,29.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,112.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,64.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,79.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,37.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,33.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-55.547.115/0001-92,Point Das Girls,2.0,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-091.104.466-30,Dayane Ferreira Rodrigues Viana,239.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-091.104.466-30,Dayane Ferreira Rodrigues Viana,98.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-036.972.956-08,IGOR SANTANA OLIVEIRA,57.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-036.972.956-08,IGOR SANTANA OLIVEIRA,21.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,10.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,71.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,0.4,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,36.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,82.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-085.064.376-79,Verônica Rabelo Marques,2.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-863.943.046-20,Nilton Nunes da Silva,950.0,"(datetime.date(2025, 2, 22), 'Credito parcelado', 3)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,4.0,"(datetime.date(2025, 2, 6), 'Debito', 0)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,98.0,"(datetime.date(2025, 2, 11), 'Credito a vista', 0)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,129.5,"(datetime.date(2025, 2, 11), 'Debito', 0)"
-47.768.363/0001-35,Rafael Aparecido da Silva,39.8,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-051.930.126-98,Carlos Roberto Moreira dos Santos,70.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-051.930.126-98,Carlos Roberto Moreira dos Santos,118.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-703.270.266-00,Felipe assunção gomes,1.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-703.270.266-00,Felipe assunção gomes,15.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-703.270.266-00,Felipe assunção gomes,25.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-703.270.266-00,Felipe assunção gomes,75.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,47.0,"(datetime.date(2025, 2, 19), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,76.5,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,9.5,"(datetime.date(2025, 2, 20), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,7.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,129.98,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,494.97,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,153.94,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,433.93,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,177.92,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,52.980000000000004,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,33.980000000000004,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,18.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,53.489999999999995,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,48.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,106.47,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,95.97,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,252.97,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-128.318.636-51,Franciele Teixeira Januário,5.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,1.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,15.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-082.793.081-05,Victor Manoel Ferreira do Carmo,2.0,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-118.958.876-58,Igor Rodrigues Da Silva Vieira,41.76,"(datetime.date(2025, 2, 5), 'Credito a vista', 0)"
-118.958.876-58,Igor Rodrigues Da Silva Vieira,158.55,"(datetime.date(2025, 2, 5), 'Debito', 0)"
-118.958.876-58,Igor Rodrigues Da Silva Vieira,26.2,"(datetime.date(2025, 2, 6), 'Credito a vista', 0)"
-118.958.876-58,Igor Rodrigues Da Silva Vieira,316.15,"(datetime.date(2025, 2, 6), 'Debito', 0)"
-953.975.666-91,Jader Antônio dos Santos Reis,340.0,"(datetime.date(2025, 2, 20), 'Credito parcelado', 2)"
-091.263.806-09,Marcos Antônio das Neves Júnior,40.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-029.913.726-05,Francisco José da Silva,1000.0,"(datetime.date(2025, 2, 25), 'Credito parcelado', 5)"
-091.196.906-30,Fernanda Sousa Vieira,10.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,25.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,26.0,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-091.196.906-30,Fernanda Sousa Vieira,260.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,207.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,1.8,"(datetime.date(2025, 2, 10), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,2.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,20.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,29.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,159.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,239.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,205.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,151.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,367.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,334.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,88.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,74.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,85.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,140.0,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-013.427.754-65,José Ailton da Silva,15.5,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-070.643.806-09,Mary Carla de Almeida,0.5,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-408.899.046-34,Jose Milton da Conceição,19.0,"(datetime.date(2025, 2, 14), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,1.0,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,14.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,9.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-408.899.046-34,Jose Milton da Conceição,25.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,8.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,3.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,6.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,19.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,721.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,424.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,551.5,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,524.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-029.913.726-05,Francisco José da Silva,1000.0,"(datetime.date(2025, 2, 25), 'Credito parcelado', 5)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,721.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,424.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,551.5,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,524.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-863.943.046-20,Nilton Nunes da Silva,950.0,"(datetime.date(2025, 2, 22), 'Credito parcelado', 3)"
-703.270.266-00,Felipe assunção gomes,1.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-703.270.266-00,Felipe assunção gomes,15.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-703.270.266-00,Felipe assunção gomes,25.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-703.270.266-00,Felipe assunção gomes,75.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,55.0,"(datetime.date(2025, 2, 20), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,30.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,25.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,25.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,317.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,66.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,33.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-040.525.196-39,Cícero Sousa Araújo Filho,145.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-388.727.143-20,Cícero Elson Carlos da Silva,5.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-47.768.363/0001-35,Rafael Aparecido da Silva,39.8,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,29.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,112.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,64.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,79.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,37.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-078.881.436-28,Paloma Roberta Bispo das Mercês,33.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-070.643.806-09,Mary Carla de Almeida,0.5,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,1.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,15.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-091.263.806-09,Marcos Antônio das Neves Júnior,40.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-085.064.376-79,Verônica Rabelo Marques,2.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,47.0,"(datetime.date(2025, 2, 19), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,76.5,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,9.5,"(datetime.date(2025, 2, 20), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,7.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,129.98,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,494.97,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,153.94,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,433.93,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,177.92,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,52.98,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,33.980000000000004,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,18.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,53.49,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,48.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,106.47,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,95.97,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-57.923.595/0001-74,Matheus Vitor Machado Ribeiro,252.97,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-091.196.906-30,Fernanda Sousa Vieira,10.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,25.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,26.0,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-091.196.906-30,Fernanda Sousa Vieira,260.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-091.196.906-30,Fernanda Sousa Vieira,207.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-010.785.306-02,Edenilton Pereira da Silva,2.0,"(datetime.date(2025, 2, 20), 'Debito', 0)"
-010.785.306-02,Edenilton Pereira da Silva,25.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-010.785.306-02,Edenilton Pereira da Silva,3.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-010.785.306-02,Edenilton Pereira da Silva,53.0,"(datetime.date(2025, 2, 25), 'Credito a vista', 0)"
-091.104.466-30,Dayane Ferreira Rodrigues Viana,239.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-091.104.466-30,Dayane Ferreira Rodrigues Viana,98.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-707.068.836-91,Vanusa Paulina De Jesus,1.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-707.068.836-91,Vanusa Paulina De Jesus,10.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,10.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,71.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,19.0,"(datetime.date(2025, 2, 14), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,1.0,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,14.0,"(datetime.date(2025, 2, 21), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,9.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-408.899.046-34,Jose Milton da Conceição,25.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,8.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,3.0,"(datetime.date(2025, 2, 25), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,6.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-408.899.046-34,Jose Milton da Conceição,19.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,45.0,"(datetime.date(2025, 2, 5), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,108.0,"(datetime.date(2025, 2, 5), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,370.0,"(datetime.date(2025, 2, 8), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,500.0,"(datetime.date(2025, 2, 8), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,400.0,"(datetime.date(2025, 2, 9), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1252.0,"(datetime.date(2025, 2, 9), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1100.0,"(datetime.date(2025, 2, 10), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,367.0,"(datetime.date(2025, 2, 10), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,8.0,"(datetime.date(2025, 2, 11), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,50.0,"(datetime.date(2025, 2, 12), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,475.0,"(datetime.date(2025, 2, 12), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,162.0,"(datetime.date(2025, 2, 13), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,250.0,"(datetime.date(2025, 2, 13), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,1142.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,263.4,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,700.0,"(datetime.date(2025, 2, 17), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,382.0,"(datetime.date(2025, 2, 19), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,200.0,"(datetime.date(2025, 2, 19), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,60.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,427.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,16.0,"(datetime.date(2025, 2, 24), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,255.0,"(datetime.date(2025, 2, 24), 'Debito', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,193.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-047.491.696-09,Rafael Augusto Andrade Pertence,331.25,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,4.0,"(datetime.date(2025, 2, 6), 'Debito', 0)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,98.0,"(datetime.date(2025, 2, 11), 'Credito a vista', 0)"
-082.759.506-94,ERIKA MARTINS CHAVES CORREA,129.5,"(datetime.date(2025, 2, 11), 'Debito', 0)"
-953.975.666-91,Jader Antônio dos Santos Reis,340.0,"(datetime.date(2025, 2, 20), 'Credito parcelado', 2)"
-55.547.115/0001-92,Point Das Girls,2.0,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-128.318.636-51,Franciele Teixeira Januário,5.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-036.972.956-08,IGOR SANTANA OLIVEIRA,57.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-036.972.956-08,IGOR SANTANA OLIVEIRA,21.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,1.8,"(datetime.date(2025, 2, 10), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,2.0,"(datetime.date(2025, 2, 21), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,20.0,"(datetime.date(2025, 2, 22), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,29.0,"(datetime.date(2025, 2, 22), 'Debito', 0)"
-088.334.376-20,Aline franco Dionizio,159.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-088.334.376-20,Aline franco Dionizio,239.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-051.930.126-98,Carlos Roberto Moreira dos Santos,70.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-051.930.126-98,Carlos Roberto Moreira dos Santos,118.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,0.4,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,36.0,"(datetime.date(2025, 2, 28), 'Credito a vista', 0)"
-095.003.396-09,Daniele Cristina Pereira de Oliveira,82.0,"(datetime.date(2025, 2, 28), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,205.0,"(datetime.date(2025, 2, 15), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,151.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,367.0,"(datetime.date(2025, 2, 23), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,334.0,"(datetime.date(2025, 2, 23), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,88.0,"(datetime.date(2025, 2, 26), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,74.0,"(datetime.date(2025, 2, 26), 'Debito', 0)"
-130.448.866-78,Bruna de Paula Silva,85.0,"(datetime.date(2025, 2, 27), 'Credito a vista', 0)"
-130.448.866-78,Bruna de Paula Silva,140.0,"(datetime.date(2025, 2, 27), 'Debito', 0)"
-082.793.081-05,Victor Manoel Ferreira do Carmo,2.0,"(datetime.date(2025, 2, 18), 'Debito', 0)"
-020.376.601-62,Amanda da Silva Oliveira,1.0,"(datetime.date(2025, 2, 17), 'Debito', 0)"
-196.090.877-44,José Neves Monteiro,1.3,"(datetime.date(2025, 2, 14), 'Debito', 0)"
-196.090.877-44,José Neves Monteiro,5.0,"(datetime.date(2025, 2, 15), 'Debito', 0)"
+118.829.576-44,ANA CAROLINA ROSA DA CRUZ,0.0,2025-04-25
+118.829.576-44,ANA CAROLINA ROSA DA CRUZ,0.0,2025-04-26
+118.829.576-44,ANA CAROLINA ROSA DA CRUZ,0.0,2025-04-27
+118.829.576-44,ANA CAROLINA ROSA DA CRUZ,0.0,2025-04-28
+29.569.793/0001-46,Romário Raffa costa cruz,0.0,2025-04-25
+29.569.793/0001-46,Romário Raffa costa cruz,0.0,2025-04-26
+29.569.793/0001-46,Romário Raffa costa cruz,0.0,2025-04-27
+29.569.793/0001-46,Romário Raffa costa cruz,0.0,2025-04-28
+102.875.344-64,Bruno Miguel da Silva Santos,0.0,2025-04-25
+102.875.344-64,Bruno Miguel da Silva Santos,0.0,2025-04-26
+102.875.344-64,Bruno Miguel da Silva Santos,0.0,2025-04-27
+102.875.344-64,Bruno Miguel da Silva Santos,0.0,2025-04-28
+034.269.016-76,Ernandes Rodrigues gomes,0.0,2025-04-25
+034.269.016-76,Ernandes Rodrigues gomes,0.0,2025-04-26
+034.269.016-76,Ernandes Rodrigues gomes,0.0,2025-04-27
+034.269.016-76,Ernandes Rodrigues gomes,0.0,2025-04-28
+952.919.032-87,Rogério Medeiros Rodrigues,0.0,2025-04-25
+952.919.032-87,Rogério Medeiros Rodrigues,0.0,2025-04-26
+952.919.032-87,Rogério Medeiros Rodrigues,0.0,2025-04-27
+952.919.032-87,Rogério Medeiros Rodrigues,0.0,2025-04-28
+53.122.626/0001-37,53.122.626 PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-25
+53.122.626/0001-37,53.122.626 PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-26
+53.122.626/0001-37,53.122.626 PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-27
+53.122.626/0001-37,53.122.626 PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-28
+043.684.034-01,Jerônimo de Amorim Plínio,0.0,2025-04-25
+043.684.034-01,Jerônimo de Amorim Plínio,0.0,2025-04-26
+043.684.034-01,Jerônimo de Amorim Plínio,0.0,2025-04-27
+043.684.034-01,Jerônimo de Amorim Plínio,0.0,2025-04-28
+021.219.503-46,Vilmar Pereira de sousa,0.0,2025-04-25
+021.219.503-46,Vilmar Pereira de sousa,0.0,2025-04-26
+021.219.503-46,Vilmar Pereira de sousa,0.0,2025-04-27
+021.219.503-46,Vilmar Pereira de sousa,0.0,2025-04-28
+098.802.789-50,Tialesse Cristiano de Sousa Silva,0.0,2025-04-25
+098.802.789-50,Tialesse Cristiano de Sousa Silva,0.0,2025-04-26
+098.802.789-50,Tialesse Cristiano de Sousa Silva,0.0,2025-04-27
+098.802.789-50,Tialesse Cristiano de Sousa Silva,0.0,2025-04-28
+118.958.876-58,Igor Rodrigues Da Silva Vieira,0.0,2025-04-25
+118.958.876-58,Igor Rodrigues Da Silva Vieira,0.0,2025-04-26
+118.958.876-58,Igor Rodrigues Da Silva Vieira,0.0,2025-04-27
+118.958.876-58,Igor Rodrigues Da Silva Vieira,0.0,2025-04-28
+111.783.076-46,Verônica Sabrina Soares costa,0.0,2025-04-25
+111.783.076-46,Verônica Sabrina Soares costa,0.0,2025-04-26
+111.783.076-46,Verônica Sabrina Soares costa,0.0,2025-04-27
+111.783.076-46,Verônica Sabrina Soares costa,0.0,2025-04-28
+51.201.930/0001-44,51.201.930 FRANCISCO CARLOS DA SILVA,0.0,2025-04-25
+51.201.930/0001-44,51.201.930 FRANCISCO CARLOS DA SILVA,0.0,2025-04-26
+51.201.930/0001-44,51.201.930 FRANCISCO CARLOS DA SILVA,0.0,2025-04-27
+51.201.930/0001-44,51.201.930 FRANCISCO CARLOS DA SILVA,0.0,2025-04-28
+019.298.636-83,PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-25
+019.298.636-83,PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-26
+019.298.636-83,PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-27
+019.298.636-83,PEDRO HENRIQUE ELESBOM MOREIRA,0.0,2025-04-28
+873.392.776-68,Marcelino Fernandes da Silva,0.0,2025-04-25
+873.392.776-68,Marcelino Fernandes da Silva,0.0,2025-04-26
+873.392.776-68,Marcelino Fernandes da Silva,0.0,2025-04-27
+873.392.776-68,Marcelino Fernandes da Silva,0.0,2025-04-28
+042.030.677-31,Vaneide Pereira de Oliveira,0.0,2025-04-25
+042.030.677-31,Vaneide Pereira de Oliveira,0.0,2025-04-26
+042.030.677-31,Vaneide Pereira de Oliveira,0.0,2025-04-27
+042.030.677-31,Vaneide Pereira de Oliveira,0.0,2025-04-28
+013.427.754-65,José Ailton da Silva,0.0,2025-04-25
+013.427.754-65,José Ailton da Silva,0.0,2025-04-26
+013.427.754-65,José Ailton da Silva,0.0,2025-04-27
+013.427.754-65,José Ailton da Silva,0.0,2025-04-28
+53.893.416/0001-42,53.893.416 FRANCISCO GIRLEISON RAMOS GASPAR,0.0,2025-04-25
+53.893.416/0001-42,53.893.416 FRANCISCO GIRLEISON RAMOS GASPAR,0.0,2025-04-26
+53.893.416/0001-42,53.893.416 FRANCISCO GIRLEISON RAMOS GASPAR,0.0,2025-04-27
+53.893.416/0001-42,53.893.416 FRANCISCO GIRLEISON RAMOS GASPAR,0.0,2025-04-28
+080.149.267-06,Luiz Henrique da Silva,0.0,2025-04-25
+080.149.267-06,Luiz Henrique da Silva,0.0,2025-04-26
+080.149.267-06,Luiz Henrique da Silva,0.0,2025-04-27
+080.149.267-06,Luiz Henrique da Silva,0.0,2025-04-28
+154.024.786-43,Vitor Martins Carvalho,0.0,2025-04-25
+154.024.786-43,Vitor Martins Carvalho,0.0,2025-04-26
+154.024.786-43,Vitor Martins Carvalho,0.0,2025-04-27
+154.024.786-43,Vitor Martins Carvalho,0.0,2025-04-28
+093.727.146-23,Filipe Rodrigues de Oliveira,185.0,2025-04-25
+093.727.146-23,Filipe Rodrigues de Oliveira,195.0,2025-04-26
+093.727.146-23,Filipe Rodrigues de Oliveira,0.0,2025-04-27
+093.727.146-23,Filipe Rodrigues de Oliveira,0.0,2025-04-28
+017.841.496-40,Victor Emannuel Medeiros Silva,0.0,2025-04-25
+017.841.496-40,Victor Emannuel Medeiros Silva,0.0,2025-04-26
+017.841.496-40,Victor Emannuel Medeiros Silva,0.0,2025-04-27
+017.841.496-40,Victor Emannuel Medeiros Silva,0.0,2025-04-28
+977.615.086-15,Euires Teixeira de Melo,0.0,2025-04-25
+977.615.086-15,Euires Teixeira de Melo,0.0,2025-04-26
+977.615.086-15,Euires Teixeira de Melo,0.0,2025-04-27
+977.615.086-15,Euires Teixeira de Melo,0.0,2025-04-28
+029.913.726-05,Francisco José da Silva,0.0,2025-04-25
+029.913.726-05,Francisco José da Silva,0.0,2025-04-26
+029.913.726-05,Francisco José da Silva,0.0,2025-04-27
+029.913.726-05,Francisco José da Silva,0.0,2025-04-28
+54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,0.0,2025-04-25
+54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,0.0,2025-04-26
+54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,0.0,2025-04-27
+54.112.002/0001-00,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,0.0,2025-04-28
+009.543.786-01,Raquel Bazilio Corrêa Borges,0.0,2025-04-25
+009.543.786-01,Raquel Bazilio Corrêa Borges,0.0,2025-04-26
+009.543.786-01,Raquel Bazilio Corrêa Borges,0.0,2025-04-27
+009.543.786-01,Raquel Bazilio Corrêa Borges,0.0,2025-04-28
+768.362.316-49,Santa Pereira de Oliveira Gomes,0.0,2025-04-25
+768.362.316-49,Santa Pereira de Oliveira Gomes,0.0,2025-04-26
+768.362.316-49,Santa Pereira de Oliveira Gomes,0.0,2025-04-27
+768.362.316-49,Santa Pereira de Oliveira Gomes,0.0,2025-04-28
+863.943.046-20,Nilton Nunes da Silva,350.0,2025-04-26
+863.943.046-20,Nilton Nunes da Silva,0.0,2025-04-25
+863.943.046-20,Nilton Nunes da Silva,0.0,2025-04-27
+863.943.046-20,Nilton Nunes da Silva,0.0,2025-04-28
+073.905.896-71,CARLOS AUGUSTO GOMES,0.0,2025-04-25
+073.905.896-71,CARLOS AUGUSTO GOMES,0.0,2025-04-26
+073.905.896-71,CARLOS AUGUSTO GOMES,0.0,2025-04-27
+073.905.896-71,CARLOS AUGUSTO GOMES,0.0,2025-04-28
+067.316.626-07,Marcela Carolina Ribeiro Menezes,0.0,2025-04-25
+067.316.626-07,Marcela Carolina Ribeiro Menezes,0.0,2025-04-26
+067.316.626-07,Marcela Carolina Ribeiro Menezes,0.0,2025-04-27
+067.316.626-07,Marcela Carolina Ribeiro Menezes,0.0,2025-04-28
+069.116.786-92,Paula Miranda Moraes,0.0,2025-04-25
+069.116.786-92,Paula Miranda Moraes,0.0,2025-04-26
+069.116.786-92,Paula Miranda Moraes,0.0,2025-04-27
+069.116.786-92,Paula Miranda Moraes,0.0,2025-04-28
+703.270.266-00,Felipe assunção gomes,0.0,2025-04-25
+703.270.266-00,Felipe assunção gomes,0.0,2025-04-26
+703.270.266-00,Felipe assunção gomes,0.0,2025-04-27
+703.270.266-00,Felipe assunção gomes,0.0,2025-04-28
+040.525.196-39,Cícero Sousa Araújo Filho,309.0,2025-04-25
+040.525.196-39,Cícero Sousa Araújo Filho,398.0,2025-04-26
+040.525.196-39,Cícero Sousa Araújo Filho,0.0,2025-04-27
+040.525.196-39,Cícero Sousa Araújo Filho,0.0,2025-04-28
+52.714.245/0001-84,Carlos Roberto da Silva Filho,0.0,2025-04-25
+52.714.245/0001-84,Carlos Roberto da Silva Filho,0.0,2025-04-26
+52.714.245/0001-84,Carlos Roberto da Silva Filho,0.0,2025-04-27
+52.714.245/0001-84,Carlos Roberto da Silva Filho,0.0,2025-04-28
+388.727.143-20,Cícero Elson Carlos da Silva,0.0,2025-04-25
+388.727.143-20,Cícero Elson Carlos da Silva,0.0,2025-04-26
+388.727.143-20,Cícero Elson Carlos da Silva,0.0,2025-04-27
+388.727.143-20,Cícero Elson Carlos da Silva,0.0,2025-04-28
+137.667.036-41,Rafael Aparecido da Silva,0.0,2025-04-25
+137.667.036-41,Rafael Aparecido da Silva,0.0,2025-04-26
+137.667.036-41,Rafael Aparecido da Silva,0.0,2025-04-27
+137.667.036-41,Rafael Aparecido da Silva,0.0,2025-04-28
+099.874.326-70,Carlos Roberto da Silva Filho,0.0,2025-04-25
+099.874.326-70,Carlos Roberto da Silva Filho,0.0,2025-04-26
+099.874.326-70,Carlos Roberto da Silva Filho,0.0,2025-04-27
+099.874.326-70,Carlos Roberto da Silva Filho,0.0,2025-04-28
+015.156.996-76,Ana Paula da rocha papa godinho,0.0,2025-04-25
+015.156.996-76,Ana Paula da rocha papa godinho,0.0,2025-04-26
+015.156.996-76,Ana Paula da rocha papa godinho,0.0,2025-04-27
+015.156.996-76,Ana Paula da rocha papa godinho,0.0,2025-04-28
+038.524.107-03,Jorge Maurício Alves da Silva,0.0,2025-04-25
+038.524.107-03,Jorge Maurício Alves da Silva,0.0,2025-04-26
+038.524.107-03,Jorge Maurício Alves da Silva,0.0,2025-04-27
+038.524.107-03,Jorge Maurício Alves da Silva,0.0,2025-04-28
+057.901.287-50,Joao Paulo Maia Ferreira,0.0,2025-04-25
+057.901.287-50,Joao Paulo Maia Ferreira,0.0,2025-04-26
+057.901.287-50,Joao Paulo Maia Ferreira,0.0,2025-04-27
+057.901.287-50,Joao Paulo Maia Ferreira,0.0,2025-04-28
+091.683.497-26,Francisco Jose Ferreira Junior,0.0,2025-04-25
+091.683.497-26,Francisco Jose Ferreira Junior,0.0,2025-04-26
+091.683.497-26,Francisco Jose Ferreira Junior,0.0,2025-04-27
+091.683.497-26,Francisco Jose Ferreira Junior,0.0,2025-04-28
+035.433.124-80,FLAVIANO BRITO QUEIROZ DE OLIVEIRA,0.0,2025-04-25
+035.433.124-80,FLAVIANO BRITO QUEIROZ DE OLIVEIRA,0.0,2025-04-26
+035.433.124-80,FLAVIANO BRITO QUEIROZ DE OLIVEIRA,0.0,2025-04-27
+035.433.124-80,FLAVIANO BRITO QUEIROZ DE OLIVEIRA,0.0,2025-04-28
+270.958.118-30,Fabiano Ferreira dos Anjos,0.0,2025-04-25
+270.958.118-30,Fabiano Ferreira dos Anjos,0.0,2025-04-26
+270.958.118-30,Fabiano Ferreira dos Anjos,0.0,2025-04-27
+270.958.118-30,Fabiano Ferreira dos Anjos,0.0,2025-04-28
+009.683.625-32,Dayana Oliveira Pereira,0.0,2025-04-25
+009.683.625-32,Dayana Oliveira Pereira,0.0,2025-04-26
+009.683.625-32,Dayana Oliveira Pereira,0.0,2025-04-27
+009.683.625-32,Dayana Oliveira Pereira,0.0,2025-04-28
+742.617.386-00,MARIA DULCINEIA PEREIRA OLIVEIRA,0.0,2025-04-25
+742.617.386-00,MARIA DULCINEIA PEREIRA OLIVEIRA,0.0,2025-04-26
+742.617.386-00,MARIA DULCINEIA PEREIRA OLIVEIRA,0.0,2025-04-27
+742.617.386-00,MARIA DULCINEIA PEREIRA OLIVEIRA,0.0,2025-04-28
+008.704.093-01,Cleonilde Santos de Matos,0.0,2025-04-25
+008.704.093-01,Cleonilde Santos de Matos,0.0,2025-04-26
+008.704.093-01,Cleonilde Santos de Matos,0.0,2025-04-27
+008.704.093-01,Cleonilde Santos de Matos,0.0,2025-04-28
+063.053.544-21,Claudiane Rodrigues de Sena Silva,0.0,2025-04-25
+063.053.544-21,Claudiane Rodrigues de Sena Silva,0.0,2025-04-26
+063.053.544-21,Claudiane Rodrigues de Sena Silva,0.0,2025-04-27
+063.053.544-21,Claudiane Rodrigues de Sena Silva,0.0,2025-04-28
+738.529.107-49,José Moreira da Silva,0.0,2025-04-25
+738.529.107-49,José Moreira da Silva,0.0,2025-04-26
+738.529.107-49,José Moreira da Silva,0.0,2025-04-27
+738.529.107-49,José Moreira da Silva,0.0,2025-04-28
+397.530.198-82,Bruno Garbe dos Santos,0.0,2025-04-25
+397.530.198-82,Bruno Garbe dos Santos,0.0,2025-04-26
+397.530.198-82,Bruno Garbe dos Santos,0.0,2025-04-27
+397.530.198-82,Bruno Garbe dos Santos,0.0,2025-04-28
+034.439.831-54,Karl Vinícius Miranda de Lima,0.0,2025-04-25
+034.439.831-54,Karl Vinícius Miranda de Lima,0.0,2025-04-26
+034.439.831-54,Karl Vinícius Miranda de Lima,0.0,2025-04-27
+034.439.831-54,Karl Vinícius Miranda de Lima,0.0,2025-04-28
+989.520.992-49,Benedito Farias da Silva,0.0,2025-04-25
+989.520.992-49,Benedito Farias da Silva,0.0,2025-04-26
+989.520.992-49,Benedito Farias da Silva,0.0,2025-04-27
+989.520.992-49,Benedito Farias da Silva,0.0,2025-04-28
+095.590.997-01,Leandro do Nascimento Garcia,0.0,2025-04-25
+095.590.997-01,Leandro do Nascimento Garcia,0.0,2025-04-26
+095.590.997-01,Leandro do Nascimento Garcia,0.0,2025-04-27
+095.590.997-01,Leandro do Nascimento Garcia,0.0,2025-04-28
+47.768.363/0001-35,Rafael Aparecido da Silva,0.0,2025-04-25
+47.768.363/0001-35,Rafael Aparecido da Silva,0.0,2025-04-26
+47.768.363/0001-35,Rafael Aparecido da Silva,0.0,2025-04-27
+47.768.363/0001-35,Rafael Aparecido da Silva,0.0,2025-04-28
+033.282.596-51,Marcílio Sérgio de Melo Neto,0.0,2025-04-25
+033.282.596-51,Marcílio Sérgio de Melo Neto,0.0,2025-04-26
+033.282.596-51,Marcílio Sérgio de Melo Neto,0.0,2025-04-27
+033.282.596-51,Marcílio Sérgio de Melo Neto,0.0,2025-04-28
+54.179.065/0001-75,Salete de Oliveira,0.0,2025-04-25
+54.179.065/0001-75,Salete de Oliveira,0.0,2025-04-26
+54.179.065/0001-75,Salete de Oliveira,0.0,2025-04-27
+54.179.065/0001-75,Salete de Oliveira,0.0,2025-04-28
+604.289.537-00,ROBERTO DA SILVA SANTOS,0.0,2025-04-25
+604.289.537-00,ROBERTO DA SILVA SANTOS,0.0,2025-04-26
+604.289.537-00,ROBERTO DA SILVA SANTOS,0.0,2025-04-27
+604.289.537-00,ROBERTO DA SILVA SANTOS,0.0,2025-04-28
+53.758.067/0001-56,Ronaldo Feitosa,0.0,2025-04-25
+53.758.067/0001-56,Ronaldo Feitosa,0.0,2025-04-26
+53.758.067/0001-56,Ronaldo Feitosa,0.0,2025-04-27
+53.758.067/0001-56,Ronaldo Feitosa,0.0,2025-04-28
+53.005.010/0001-86,Rosildo luis claudino,0.0,2025-04-25
+53.005.010/0001-86,Rosildo luis claudino,0.0,2025-04-26
+53.005.010/0001-86,Rosildo luis claudino,0.0,2025-04-27
+53.005.010/0001-86,Rosildo luis claudino,0.0,2025-04-28
+52.277.593/0001-31,52.277.593 WESLEY VELOZO GONCALVES,0.0,2025-04-25
+52.277.593/0001-31,52.277.593 WESLEY VELOZO GONCALVES,0.0,2025-04-26
+52.277.593/0001-31,52.277.593 WESLEY VELOZO GONCALVES,0.0,2025-04-27
+52.277.593/0001-31,52.277.593 WESLEY VELOZO GONCALVES,0.0,2025-04-28
+128.583.847-54,Tamires Severina da Silva,0.0,2025-04-25
+128.583.847-54,Tamires Severina da Silva,0.0,2025-04-26
+128.583.847-54,Tamires Severina da Silva,0.0,2025-04-27
+128.583.847-54,Tamires Severina da Silva,0.0,2025-04-28
+50.110.221/0001-90,EMERSON ERICSON SANTOS DE ALMEIDA,0.0,2025-04-25
+50.110.221/0001-90,EMERSON ERICSON SANTOS DE ALMEIDA,0.0,2025-04-26
+50.110.221/0001-90,EMERSON ERICSON SANTOS DE ALMEIDA,0.0,2025-04-27
+50.110.221/0001-90,EMERSON ERICSON SANTOS DE ALMEIDA,0.0,2025-04-28
+49.820.887/0001-53,Ruan Ribeiro Gama,0.0,2025-04-25
+49.820.887/0001-53,Ruan Ribeiro Gama,0.0,2025-04-26
+49.820.887/0001-53,Ruan Ribeiro Gama,0.0,2025-04-27
+49.820.887/0001-53,Ruan Ribeiro Gama,0.0,2025-04-28
+53.406.840/0001-15,53.406.840 VIVIANE LUCIA DE OLIVEIRA,0.0,2025-04-25
+53.406.840/0001-15,53.406.840 VIVIANE LUCIA DE OLIVEIRA,0.0,2025-04-26
+53.406.840/0001-15,53.406.840 VIVIANE LUCIA DE OLIVEIRA,0.0,2025-04-27
+53.406.840/0001-15,53.406.840 VIVIANE LUCIA DE OLIVEIRA,0.0,2025-04-28
+078.881.436-28,Paloma Roberta Bispo das Mercês,0.0,2025-04-25
+078.881.436-28,Paloma Roberta Bispo das Mercês,0.0,2025-04-26
+078.881.436-28,Paloma Roberta Bispo das Mercês,0.0,2025-04-27
+078.881.436-28,Paloma Roberta Bispo das Mercês,0.0,2025-04-28
+070.643.806-09,Mary Carla de Almeida,0.0,2025-04-25
+070.643.806-09,Mary Carla de Almeida,0.0,2025-04-26
+070.643.806-09,Mary Carla de Almeida,0.0,2025-04-27
+070.643.806-09,Mary Carla de Almeida,0.0,2025-04-28
+076.684.956-22,Luciene Gomes De Sousa,0.0,2025-04-25
+076.684.956-22,Luciene Gomes De Sousa,0.0,2025-04-26
+076.684.956-22,Luciene Gomes De Sousa,0.0,2025-04-27
+076.684.956-22,Luciene Gomes De Sousa,0.0,2025-04-28
+017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,0.0,2025-04-25
+017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,0.0,2025-04-26
+017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,0.0,2025-04-27
+017.717.305-01,MONIKE PEREIRA DE OLIVEIRA,0.0,2025-04-28
+989.024.666-04,Nilo Furtado Teodoro,0.0,2025-04-25
+989.024.666-04,Nilo Furtado Teodoro,0.0,2025-04-26
+989.024.666-04,Nilo Furtado Teodoro,0.0,2025-04-27
+989.024.666-04,Nilo Furtado Teodoro,0.0,2025-04-28
+121.901.006-58,Elcimara Cristina Marins Fidelis,0.0,2025-04-25
+121.901.006-58,Elcimara Cristina Marins Fidelis,0.0,2025-04-26
+121.901.006-58,Elcimara Cristina Marins Fidelis,0.0,2025-04-27
+121.901.006-58,Elcimara Cristina Marins Fidelis,0.0,2025-04-28
+145.051.956-35,Valter Junio Gonçalves Cardoso,0.0,2025-04-25
+145.051.956-35,Valter Junio Gonçalves Cardoso,0.0,2025-04-26
+145.051.956-35,Valter Junio Gonçalves Cardoso,0.0,2025-04-27
+145.051.956-35,Valter Junio Gonçalves Cardoso,0.0,2025-04-28
+091.263.806-09,Marcos Antônio das Neves Júnior,0.0,2025-04-25
+091.263.806-09,Marcos Antônio das Neves Júnior,0.0,2025-04-26
+091.263.806-09,Marcos Antônio das Neves Júnior,0.0,2025-04-27
+091.263.806-09,Marcos Antônio das Neves Júnior,0.0,2025-04-28
+085.064.376-79,Verônica Rabelo Marques,0.0,2025-04-25
+085.064.376-79,Verônica Rabelo Marques,0.0,2025-04-26
+085.064.376-79,Verônica Rabelo Marques,0.0,2025-04-27
+085.064.376-79,Verônica Rabelo Marques,0.0,2025-04-28
+041.824.476-62,Marcus Vinícius Antunes Monteiro,0.0,2025-04-25
+041.824.476-62,Marcus Vinícius Antunes Monteiro,0.0,2025-04-26
+041.824.476-62,Marcus Vinícius Antunes Monteiro,0.0,2025-04-27
+041.824.476-62,Marcus Vinícius Antunes Monteiro,0.0,2025-04-28
+678.700.586-53,Wagner Silva,0.0,2025-04-25
+678.700.586-53,Wagner Silva,0.0,2025-04-26
+678.700.586-53,Wagner Silva,0.0,2025-04-27
+678.700.586-53,Wagner Silva,0.0,2025-04-28
+103.858.506-62,Márcio Henrique da Silva,0.0,2025-04-25
+103.858.506-62,Márcio Henrique da Silva,0.0,2025-04-26
+103.858.506-62,Márcio Henrique da Silva,0.0,2025-04-27
+103.858.506-62,Márcio Henrique da Silva,0.0,2025-04-28
+077.434.156-43,Vander José dos santos,0.0,2025-04-25
+077.434.156-43,Vander José dos santos,0.0,2025-04-26
+077.434.156-43,Vander José dos santos,0.0,2025-04-27
+077.434.156-43,Vander José dos santos,0.0,2025-04-28
+57.923.595/0001-74,Matheus Vitor Machado Ribeiro,158.41,2025-04-25
+57.923.595/0001-74,Matheus Vitor Machado Ribeiro,141.92,2025-04-26
+57.923.595/0001-74,Matheus Vitor Machado Ribeiro,263.14,2025-04-27
+57.923.595/0001-74,Matheus Vitor Machado Ribeiro,0.0,2025-04-28
+16.577.862/0001-11,Marcus Vinícius Antunes Monteiro,0.0,2025-04-25
+16.577.862/0001-11,Marcus Vinícius Antunes Monteiro,0.0,2025-04-26
+16.577.862/0001-11,Marcus Vinícius Antunes Monteiro,0.0,2025-04-27
+16.577.862/0001-11,Marcus Vinícius Antunes Monteiro,0.0,2025-04-28
+126.049.286-98,Thayna Gabrielle Glória Santos,0.0,2025-04-25
+126.049.286-98,Thayna Gabrielle Glória Santos,0.0,2025-04-26
+126.049.286-98,Thayna Gabrielle Glória Santos,0.0,2025-04-27
+126.049.286-98,Thayna Gabrielle Glória Santos,0.0,2025-04-28
+135.678.866-14,Leandro Miranda,0.0,2025-04-25
+135.678.866-14,Leandro Miranda,0.0,2025-04-26
+135.678.866-14,Leandro Miranda,0.0,2025-04-27
+135.678.866-14,Leandro Miranda,0.0,2025-04-28
+517.399.938-10,Jeferson Fernandes da Silva,0.0,2025-04-25
+517.399.938-10,Jeferson Fernandes da Silva,0.0,2025-04-26
+517.399.938-10,Jeferson Fernandes da Silva,0.0,2025-04-27
+517.399.938-10,Jeferson Fernandes da Silva,0.0,2025-04-28
+091.196.906-30,Fernanda Sousa Vieira,0.0,2025-04-25
+091.196.906-30,Fernanda Sousa Vieira,0.0,2025-04-26
+091.196.906-30,Fernanda Sousa Vieira,0.0,2025-04-27
+091.196.906-30,Fernanda Sousa Vieira,0.0,2025-04-28
+102.324.617-16,Claudia Ferreira Alves,0.0,2025-04-25
+102.324.617-16,Claudia Ferreira Alves,0.0,2025-04-26
+102.324.617-16,Claudia Ferreira Alves,0.0,2025-04-27
+102.324.617-16,Claudia Ferreira Alves,0.0,2025-04-28
+010.785.306-02,Edenilton Pereira da Silva,0.0,2025-04-25
+010.785.306-02,Edenilton Pereira da Silva,0.0,2025-04-26
+010.785.306-02,Edenilton Pereira da Silva,0.0,2025-04-27
+010.785.306-02,Edenilton Pereira da Silva,0.0,2025-04-28
+054.960.736-69,Fernanda Cristina da Cunha,0.0,2025-04-25
+054.960.736-69,Fernanda Cristina da Cunha,0.0,2025-04-26
+054.960.736-69,Fernanda Cristina da Cunha,0.0,2025-04-27
+054.960.736-69,Fernanda Cristina da Cunha,0.0,2025-04-28
+106.658.026-09,Esmeralda Alves de Oliveira,0.0,2025-04-25
+106.658.026-09,Esmeralda Alves de Oliveira,0.0,2025-04-26
+106.658.026-09,Esmeralda Alves de Oliveira,0.0,2025-04-27
+106.658.026-09,Esmeralda Alves de Oliveira,0.0,2025-04-28
+091.104.466-30,Dayane Ferreira Rodrigues Viana,0.0,2025-04-25
+091.104.466-30,Dayane Ferreira Rodrigues Viana,0.0,2025-04-26
+091.104.466-30,Dayane Ferreira Rodrigues Viana,0.0,2025-04-27
+091.104.466-30,Dayane Ferreira Rodrigues Viana,0.0,2025-04-28
+044.154.786-97,Raphael Olivier Vilela,0.0,2025-04-25
+044.154.786-97,Raphael Olivier Vilela,0.0,2025-04-26
+044.154.786-97,Raphael Olivier Vilela,0.0,2025-04-27
+044.154.786-97,Raphael Olivier Vilela,0.0,2025-04-28
+48.975.538/0001-48,Claudio Lucio de Magalhães Silveira Jr,0.0,2025-04-25
+48.975.538/0001-48,Claudio Lucio de Magalhães Silveira Jr,0.0,2025-04-26
+48.975.538/0001-48,Claudio Lucio de Magalhães Silveira Jr,0.0,2025-04-27
+48.975.538/0001-48,Claudio Lucio de Magalhães Silveira Jr,0.0,2025-04-28
+052.389.718-93,Claudemir Raia Ferreira,0.0,2025-04-25
+052.389.718-93,Claudemir Raia Ferreira,0.0,2025-04-26
+052.389.718-93,Claudemir Raia Ferreira,0.0,2025-04-27
+052.389.718-93,Claudemir Raia Ferreira,0.0,2025-04-28
+65.475.691/0001-25,Claudemir Raia Ferreira,0.0,2025-04-25
+65.475.691/0001-25,Claudemir Raia Ferreira,0.0,2025-04-26
+65.475.691/0001-25,Claudemir Raia Ferreira,0.0,2025-04-27
+65.475.691/0001-25,Claudemir Raia Ferreira,0.0,2025-04-28
+013.407.403-38,Rafael Nobre de Freitas,0.0,2025-04-25
+013.407.403-38,Rafael Nobre de Freitas,0.0,2025-04-26
+013.407.403-38,Rafael Nobre de Freitas,0.0,2025-04-27
+013.407.403-38,Rafael Nobre de Freitas,0.0,2025-04-28
+53.328.876/0001-28,DONA FLOR PATRIMONIAL PARTICIPACOES LTDA,0.0,2025-04-25
+53.328.876/0001-28,DONA FLOR PATRIMONIAL PARTICIPACOES LTDA,0.0,2025-04-26
+53.328.876/0001-28,DONA FLOR PATRIMONIAL PARTICIPACOES LTDA,0.0,2025-04-27
+53.328.876/0001-28,DONA FLOR PATRIMONIAL PARTICIPACOES LTDA,0.0,2025-04-28
+35.768.732/0001-00,35.768.732 EDUARDO LUCAS DEODATO,0.0,2025-04-25
+35.768.732/0001-00,35.768.732 EDUARDO LUCAS DEODATO,0.0,2025-04-26
+35.768.732/0001-00,35.768.732 EDUARDO LUCAS DEODATO,0.0,2025-04-27
+35.768.732/0001-00,35.768.732 EDUARDO LUCAS DEODATO,0.0,2025-04-28
+119.435.856-01,Eduardo Lucas Deodato,0.0,2025-04-25
+119.435.856-01,Eduardo Lucas Deodato,0.0,2025-04-26
+119.435.856-01,Eduardo Lucas Deodato,0.0,2025-04-27
+119.435.856-01,Eduardo Lucas Deodato,0.0,2025-04-28
+568.642.216-87,Marcelo Henrique do Amaral,0.0,2025-04-25
+568.642.216-87,Marcelo Henrique do Amaral,0.0,2025-04-26
+568.642.216-87,Marcelo Henrique do Amaral,0.0,2025-04-27
+568.642.216-87,Marcelo Henrique do Amaral,0.0,2025-04-28
+047.296.905-67,Robério Alencar de Seles,0.0,2025-04-25
+047.296.905-67,Robério Alencar de Seles,0.0,2025-04-26
+047.296.905-67,Robério Alencar de Seles,0.0,2025-04-27
+047.296.905-67,Robério Alencar de Seles,0.0,2025-04-28
+274.979.468-46,David Alves dos Santos,0.0,2025-04-25
+274.979.468-46,David Alves dos Santos,0.0,2025-04-26
+274.979.468-46,David Alves dos Santos,0.0,2025-04-27
+274.979.468-46,David Alves dos Santos,0.0,2025-04-28
+009.528.904-61,JOSE DE SOUZA BASTOS,0.0,2025-04-25
+009.528.904-61,JOSE DE SOUZA BASTOS,0.0,2025-04-26
+009.528.904-61,JOSE DE SOUZA BASTOS,0.0,2025-04-27
+009.528.904-61,JOSE DE SOUZA BASTOS,0.0,2025-04-28
+41.584.950/0001-98,DAVID ALVES DOS SANTOS 27497946846,0.0,2025-04-25
+41.584.950/0001-98,DAVID ALVES DOS SANTOS 27497946846,0.0,2025-04-26
+41.584.950/0001-98,DAVID ALVES DOS SANTOS 27497946846,0.0,2025-04-27
+41.584.950/0001-98,DAVID ALVES DOS SANTOS 27497946846,0.0,2025-04-28
+276.623.718-67,Josivan Pereira Da Silva,0.0,2025-04-25
+276.623.718-67,Josivan Pereira Da Silva,0.0,2025-04-26
+276.623.718-67,Josivan Pereira Da Silva,0.0,2025-04-27
+276.623.718-67,Josivan Pereira Da Silva,0.0,2025-04-28
+117.383.896-18,Fernanda Cesar de Oliveira,0.0,2025-04-25
+117.383.896-18,Fernanda Cesar de Oliveira,0.0,2025-04-26
+117.383.896-18,Fernanda Cesar de Oliveira,0.0,2025-04-27
+117.383.896-18,Fernanda Cesar de Oliveira,0.0,2025-04-28
+29.056.933/0001-82,Márcio Nunes chagas,0.0,2025-04-25
+29.056.933/0001-82,Márcio Nunes chagas,0.0,2025-04-26
+29.056.933/0001-82,Márcio Nunes chagas,0.0,2025-04-27
+29.056.933/0001-82,Márcio Nunes chagas,0.0,2025-04-28
+57.282.802/0001-59,Luis Fillipe do Rosário Lima,0.0,2025-04-25
+57.282.802/0001-59,Luis Fillipe do Rosário Lima,0.0,2025-04-26
+57.282.802/0001-59,Luis Fillipe do Rosário Lima,0.0,2025-04-27
+57.282.802/0001-59,Luis Fillipe do Rosário Lima,0.0,2025-04-28
+010.566.887-77,Mario da Silva folha,0.0,2025-04-25
+010.566.887-77,Mario da Silva folha,0.0,2025-04-26
+010.566.887-77,Mario da Silva folha,0.0,2025-04-27
+010.566.887-77,Mario da Silva folha,0.0,2025-04-28
+099.288.157-98,Leandro Ferreira Do Carmo,0.0,2025-04-25
+099.288.157-98,Leandro Ferreira Do Carmo,0.0,2025-04-26
+099.288.157-98,Leandro Ferreira Do Carmo,0.0,2025-04-27
+099.288.157-98,Leandro Ferreira Do Carmo,0.0,2025-04-28
+707.068.836-91,Vanusa Paulina De Jesus,0.0,2025-04-25
+707.068.836-91,Vanusa Paulina De Jesus,0.0,2025-04-26
+707.068.836-91,Vanusa Paulina De Jesus,0.0,2025-04-27
+707.068.836-91,Vanusa Paulina De Jesus,0.0,2025-04-28
+095.370.216-29,Poliana Gonçalves de Almeida,0.0,2025-04-25
+095.370.216-29,Poliana Gonçalves de Almeida,0.0,2025-04-26
+095.370.216-29,Poliana Gonçalves de Almeida,0.0,2025-04-27
+095.370.216-29,Poliana Gonçalves de Almeida,0.0,2025-04-28
+41.889.959/0001-07,41.889.959 Felipe Rosa Silveira,0.0,2025-04-25
+41.889.959/0001-07,41.889.959 Felipe Rosa Silveira,0.0,2025-04-26
+41.889.959/0001-07,41.889.959 Felipe Rosa Silveira,0.0,2025-04-27
+41.889.959/0001-07,41.889.959 Felipe Rosa Silveira,0.0,2025-04-28
+54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,0.0,2025-04-25
+54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,0.0,2025-04-26
+54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,0.0,2025-04-27
+54.070.275/0001-20,JORDANIA DA CONCEICAO SANTOS NUNES,0.0,2025-04-28
+49.433.400/0001-80,CARLOS VANDERLI DOS ANJOS DE LANA,0.0,2025-04-25
+49.433.400/0001-80,CARLOS VANDERLI DOS ANJOS DE LANA,0.0,2025-04-26
+49.433.400/0001-80,CARLOS VANDERLI DOS ANJOS DE LANA,0.0,2025-04-27
+49.433.400/0001-80,CARLOS VANDERLI DOS ANJOS DE LANA,0.0,2025-04-28
+408.899.046-34,Jose Milton da Conceição,0.0,2025-04-25
+408.899.046-34,Jose Milton da Conceição,0.0,2025-04-26
+408.899.046-34,Jose Milton da Conceição,0.0,2025-04-27
+408.899.046-34,Jose Milton da Conceição,0.0,2025-04-28
+143.890.266-23,Rayanne Estefane Do Carmo Costa,0.0,2025-04-25
+143.890.266-23,Rayanne Estefane Do Carmo Costa,0.0,2025-04-26
+143.890.266-23,Rayanne Estefane Do Carmo Costa,0.0,2025-04-27
+143.890.266-23,Rayanne Estefane Do Carmo Costa,0.0,2025-04-28
+128.575.706-86,Camila Moreira Rodrigues,0.0,2025-04-25
+128.575.706-86,Camila Moreira Rodrigues,0.0,2025-04-26
+128.575.706-86,Camila Moreira Rodrigues,0.0,2025-04-27
+128.575.706-86,Camila Moreira Rodrigues,0.0,2025-04-28
+114.581.826-90,Matheus Henrique Fernandes Souza,0.0,2025-04-25
+114.581.826-90,Matheus Henrique Fernandes Souza,0.0,2025-04-26
+114.581.826-90,Matheus Henrique Fernandes Souza,0.0,2025-04-27
+114.581.826-90,Matheus Henrique Fernandes Souza,0.0,2025-04-28
+58.042.976/0001-07,Luiz Cesar Ribeiro Marques,0.0,2025-04-25
+58.042.976/0001-07,Luiz Cesar Ribeiro Marques,0.0,2025-04-26
+58.042.976/0001-07,Luiz Cesar Ribeiro Marques,0.0,2025-04-27
+58.042.976/0001-07,Luiz Cesar Ribeiro Marques,0.0,2025-04-28
+112.018.776-10,Paloma Aparecida da Costa,0.0,2025-04-25
+112.018.776-10,Paloma Aparecida da Costa,0.0,2025-04-26
+112.018.776-10,Paloma Aparecida da Costa,0.0,2025-04-27
+112.018.776-10,Paloma Aparecida da Costa,0.0,2025-04-28
+014.334.326-25,Erika Gleice Aparecida Ferreira dos Santos,0.0,2025-04-25
+014.334.326-25,Erika Gleice Aparecida Ferreira dos Santos,0.0,2025-04-26
+014.334.326-25,Erika Gleice Aparecida Ferreira dos Santos,0.0,2025-04-27
+014.334.326-25,Erika Gleice Aparecida Ferreira dos Santos,0.0,2025-04-28
+067.832.846-38,Dener Rosa da Silva,0.0,2025-04-25
+067.832.846-38,Dener Rosa da Silva,0.0,2025-04-26
+067.832.846-38,Dener Rosa da Silva,0.0,2025-04-27
+067.832.846-38,Dener Rosa da Silva,0.0,2025-04-28
+047.491.696-09,Rafael Augusto Andrade Pertence,68.0,2025-04-26
+047.491.696-09,Rafael Augusto Andrade Pertence,0.0,2025-04-25
+047.491.696-09,Rafael Augusto Andrade Pertence,0.0,2025-04-27
+047.491.696-09,Rafael Augusto Andrade Pertence,0.0,2025-04-28
+017.849.156-02,Jeferson Gustavo Souza Santos,0.0,2025-04-25
+017.849.156-02,Jeferson Gustavo Souza Santos,0.0,2025-04-26
+017.849.156-02,Jeferson Gustavo Souza Santos,0.0,2025-04-27
+017.849.156-02,Jeferson Gustavo Souza Santos,0.0,2025-04-28
+082.759.506-94,ERIKA MARTINS CHAVES CORREA,0.0,2025-04-25
+082.759.506-94,ERIKA MARTINS CHAVES CORREA,0.0,2025-04-26
+082.759.506-94,ERIKA MARTINS CHAVES CORREA,0.0,2025-04-27
+082.759.506-94,ERIKA MARTINS CHAVES CORREA,0.0,2025-04-28
+144.497.566-81,Victoria Porto Carvalho,0.0,2025-04-25
+144.497.566-81,Victoria Porto Carvalho,0.0,2025-04-26
+144.497.566-81,Victoria Porto Carvalho,0.0,2025-04-27
+144.497.566-81,Victoria Porto Carvalho,0.0,2025-04-28
+11.069.452/0001-46,Marcus Vinícius Antunes Monteiro,0.0,2025-04-25
+11.069.452/0001-46,Marcus Vinícius Antunes Monteiro,0.0,2025-04-26
+11.069.452/0001-46,Marcus Vinícius Antunes Monteiro,0.0,2025-04-27
+11.069.452/0001-46,Marcus Vinícius Antunes Monteiro,0.0,2025-04-28
+953.975.666-91,Jader Antônio dos Santos Reis,0.0,2025-04-25
+953.975.666-91,Jader Antônio dos Santos Reis,0.0,2025-04-26
+953.975.666-91,Jader Antônio dos Santos Reis,0.0,2025-04-27
+953.975.666-91,Jader Antônio dos Santos Reis,0.0,2025-04-28
+059.644.886-41,Jordana dos Santos Izidoro,0.0,2025-04-25
+059.644.886-41,Jordana dos Santos Izidoro,0.0,2025-04-26
+059.644.886-41,Jordana dos Santos Izidoro,0.0,2025-04-27
+059.644.886-41,Jordana dos Santos Izidoro,0.0,2025-04-28
+55.547.115/0001-92,Point Das Girls,0.0,2025-04-25
+55.547.115/0001-92,Point Das Girls,0.0,2025-04-26
+55.547.115/0001-92,Point Das Girls,0.0,2025-04-27
+55.547.115/0001-92,Point Das Girls,0.0,2025-04-28
+128.318.636-51,Franciele Teixeira Januário,0.0,2025-04-25
+128.318.636-51,Franciele Teixeira Januário,0.0,2025-04-26
+128.318.636-51,Franciele Teixeira Januário,0.0,2025-04-27
+128.318.636-51,Franciele Teixeira Januário,0.0,2025-04-28
+036.972.956-08,IGOR SANTANA OLIVEIRA,0.0,2025-04-25
+036.972.956-08,IGOR SANTANA OLIVEIRA,0.0,2025-04-26
+036.972.956-08,IGOR SANTANA OLIVEIRA,0.0,2025-04-27
+036.972.956-08,IGOR SANTANA OLIVEIRA,0.0,2025-04-28
+029.037.156-29,Alexânia Mendes Aires Rodrigues,0.0,2025-04-25
+029.037.156-29,Alexânia Mendes Aires Rodrigues,0.0,2025-04-26
+029.037.156-29,Alexânia Mendes Aires Rodrigues,0.0,2025-04-27
+029.037.156-29,Alexânia Mendes Aires Rodrigues,0.0,2025-04-28
+103.132.056-39,Thales Augusto Rodrigues Carmo,0.0,2025-04-25
+103.132.056-39,Thales Augusto Rodrigues Carmo,0.0,2025-04-26
+103.132.056-39,Thales Augusto Rodrigues Carmo,0.0,2025-04-27
+103.132.056-39,Thales Augusto Rodrigues Carmo,0.0,2025-04-28
+700.189.796-53,Silvana de Sousa Santos,0.0,2025-04-25
+700.189.796-53,Silvana de Sousa Santos,0.0,2025-04-26
+700.189.796-53,Silvana de Sousa Santos,0.0,2025-04-27
+700.189.796-53,Silvana de Sousa Santos,0.0,2025-04-28
+088.334.376-20,Aline franco Dionizio,0.0,2025-04-25
+088.334.376-20,Aline franco Dionizio,0.0,2025-04-26
+088.334.376-20,Aline franco Dionizio,0.0,2025-04-27
+088.334.376-20,Aline franco Dionizio,0.0,2025-04-28
+020.076.336-98,Raissa Agda Ferreira,0.0,2025-04-25
+020.076.336-98,Raissa Agda Ferreira,0.0,2025-04-26
+020.076.336-98,Raissa Agda Ferreira,0.0,2025-04-27
+020.076.336-98,Raissa Agda Ferreira,0.0,2025-04-28
+955.936.166-04,Cássio Aldomar Caldas Alves de Oliveira,0.0,2025-04-25
+955.936.166-04,Cássio Aldomar Caldas Alves de Oliveira,0.0,2025-04-26
+955.936.166-04,Cássio Aldomar Caldas Alves de Oliveira,0.0,2025-04-27
+955.936.166-04,Cássio Aldomar Caldas Alves de Oliveira,0.0,2025-04-28
+018.199.776-25,Giovani Ferreira dos Santos,0.0,2025-04-25
+018.199.776-25,Giovani Ferreira dos Santos,0.0,2025-04-26
+018.199.776-25,Giovani Ferreira dos Santos,0.0,2025-04-27
+018.199.776-25,Giovani Ferreira dos Santos,0.0,2025-04-28
+078.508.266-20,Maria de Fátima da Silva,0.0,2025-04-25
+078.508.266-20,Maria de Fátima da Silva,0.0,2025-04-26
+078.508.266-20,Maria de Fátima da Silva,0.0,2025-04-27
+078.508.266-20,Maria de Fátima da Silva,0.0,2025-04-28
+060.780.166-28,Natália Silva Rezende,0.0,2025-04-25
+060.780.166-28,Natália Silva Rezende,0.0,2025-04-26
+060.780.166-28,Natália Silva Rezende,0.0,2025-04-27
+060.780.166-28,Natália Silva Rezende,0.0,2025-04-28
+051.930.126-98,Carlos Roberto Moreira dos Santos,0.0,2025-04-25
+051.930.126-98,Carlos Roberto Moreira dos Santos,0.0,2025-04-26
+051.930.126-98,Carlos Roberto Moreira dos Santos,0.0,2025-04-27
+051.930.126-98,Carlos Roberto Moreira dos Santos,0.0,2025-04-28
+109.665.356-77,Luiz Fernando Marques Vieira dos Santos,0.0,2025-04-25
+109.665.356-77,Luiz Fernando Marques Vieira dos Santos,0.0,2025-04-26
+109.665.356-77,Luiz Fernando Marques Vieira dos Santos,0.0,2025-04-27
+109.665.356-77,Luiz Fernando Marques Vieira dos Santos,0.0,2025-04-28
+143.589.576-25,Marcos Vinicius Pereira de Almeida,0.0,2025-04-25
+143.589.576-25,Marcos Vinicius Pereira de Almeida,0.0,2025-04-26
+143.589.576-25,Marcos Vinicius Pereira de Almeida,0.0,2025-04-27
+143.589.576-25,Marcos Vinicius Pereira de Almeida,0.0,2025-04-28
+095.003.396-09,Daniele Cristina Pereira de Oliveira,0.0,2025-04-25
+095.003.396-09,Daniele Cristina Pereira de Oliveira,0.0,2025-04-26
+095.003.396-09,Daniele Cristina Pereira de Oliveira,0.0,2025-04-27
+095.003.396-09,Daniele Cristina Pereira de Oliveira,0.0,2025-04-28
+130.448.866-78,Bruna de Paula Silva,0.0,2025-04-25
+130.448.866-78,Bruna de Paula Silva,0.0,2025-04-26
+130.448.866-78,Bruna de Paula Silva,0.0,2025-04-27
+130.448.866-78,Bruna de Paula Silva,0.0,2025-04-28
+54.961.072/0001-24,REGIANE FABIOLA CARLOS LIBANIO,0.0,2025-04-25
+54.961.072/0001-24,REGIANE FABIOLA CARLOS LIBANIO,0.0,2025-04-26
+54.961.072/0001-24,REGIANE FABIOLA CARLOS LIBANIO,0.0,2025-04-27
+54.961.072/0001-24,REGIANE FABIOLA CARLOS LIBANIO,0.0,2025-04-28
+50.447.111/0001-19,Crédito Essencial LTDA,0.0,2025-04-25
+50.447.111/0001-19,Crédito Essencial LTDA,0.0,2025-04-26
+50.447.111/0001-19,Crédito Essencial LTDA,0.0,2025-04-27
+50.447.111/0001-19,Crédito Essencial LTDA,0.0,2025-04-28
+006.084.349-73,Gilberto Ramon Fernandez,0.0,2025-04-25
+006.084.349-73,Gilberto Ramon Fernandez,0.0,2025-04-26
+006.084.349-73,Gilberto Ramon Fernandez,0.0,2025-04-27
+006.084.349-73,Gilberto Ramon Fernandez,0.0,2025-04-28
+096.631.797-16,Márcio da Silva Nogueira,0.0,2025-04-25
+096.631.797-16,Márcio da Silva Nogueira,0.0,2025-04-26
+096.631.797-16,Márcio da Silva Nogueira,0.0,2025-04-27
+096.631.797-16,Márcio da Silva Nogueira,0.0,2025-04-28
+016.447.666-04,Andre Batista da Silva,0.0,2025-04-25
+016.447.666-04,Andre Batista da Silva,0.0,2025-04-26
+016.447.666-04,Andre Batista da Silva,0.0,2025-04-27
+016.447.666-04,Andre Batista da Silva,0.0,2025-04-28
+161.330.066-25,Sandro Juã Jacintho Leão,0.0,2025-04-25
+161.330.066-25,Sandro Juã Jacintho Leão,0.0,2025-04-26
+161.330.066-25,Sandro Juã Jacintho Leão,0.0,2025-04-27
+161.330.066-25,Sandro Juã Jacintho Leão,0.0,2025-04-28
+55.222.589/0001-64,55.222.589 VITOR HUGO MARQUES DE OLIVEIRA,0.0,2025-04-25
+55.222.589/0001-64,55.222.589 VITOR HUGO MARQUES DE OLIVEIRA,0.0,2025-04-26
+55.222.589/0001-64,55.222.589 VITOR HUGO MARQUES DE OLIVEIRA,0.0,2025-04-27
+55.222.589/0001-64,55.222.589 VITOR HUGO MARQUES DE OLIVEIRA,0.0,2025-04-28
+424.234.608-56,Fabio Eduardo Ferreira da Silva,0.0,2025-04-25
+424.234.608-56,Fabio Eduardo Ferreira da Silva,0.0,2025-04-26
+424.234.608-56,Fabio Eduardo Ferreira da Silva,0.0,2025-04-27
+424.234.608-56,Fabio Eduardo Ferreira da Silva,0.0,2025-04-28
+082.793.081-05,Victor Manoel Ferreira do Carmo,0.0,2025-04-25
+082.793.081-05,Victor Manoel Ferreira do Carmo,0.0,2025-04-26
+082.793.081-05,Victor Manoel Ferreira do Carmo,0.0,2025-04-27
+082.793.081-05,Victor Manoel Ferreira do Carmo,0.0,2025-04-28
+103.266.307-32,Fabio Caetano Dos Santos,0.0,2025-04-25
+103.266.307-32,Fabio Caetano Dos Santos,0.0,2025-04-26
+103.266.307-32,Fabio Caetano Dos Santos,0.0,2025-04-27
+103.266.307-32,Fabio Caetano Dos Santos,0.0,2025-04-28
+078.614.206-55,Édson Douglas Salaberg,0.0,2025-04-25
+078.614.206-55,Édson Douglas Salaberg,0.0,2025-04-26
+078.614.206-55,Édson Douglas Salaberg,0.0,2025-04-27
+078.614.206-55,Édson Douglas Salaberg,0.0,2025-04-28
+020.376.601-62,Amanda da Silva Oliveira,0.0,2025-04-25
+020.376.601-62,Amanda da Silva Oliveira,0.0,2025-04-26
+020.376.601-62,Amanda da Silva Oliveira,0.0,2025-04-27
+020.376.601-62,Amanda da Silva Oliveira,0.0,2025-04-28
+589.748.058-39,Vitor Hugo Marques de Oliveira,0.0,2025-04-25
+589.748.058-39,Vitor Hugo Marques de Oliveira,0.0,2025-04-26
+589.748.058-39,Vitor Hugo Marques de Oliveira,0.0,2025-04-27
+589.748.058-39,Vitor Hugo Marques de Oliveira,0.0,2025-04-28
+006.981.735-97,Carla Jeane Rodrigues Costa,0.0,2025-04-25
+006.981.735-97,Carla Jeane Rodrigues Costa,0.0,2025-04-26
+006.981.735-97,Carla Jeane Rodrigues Costa,0.0,2025-04-27
+006.981.735-97,Carla Jeane Rodrigues Costa,0.0,2025-04-28
+56.167.134/0001-56,Valdoneis da silva soares,0.0,2025-04-25
+56.167.134/0001-56,Valdoneis da silva soares,0.0,2025-04-26
+56.167.134/0001-56,Valdoneis da silva soares,0.0,2025-04-27
+56.167.134/0001-56,Valdoneis da silva soares,0.0,2025-04-28
+46.453.562/0001-91,Mauro Cesar Silva da Costa,0.0,2025-04-25
+46.453.562/0001-91,Mauro Cesar Silva da Costa,0.0,2025-04-26
+46.453.562/0001-91,Mauro Cesar Silva da Costa,0.0,2025-04-27
+46.453.562/0001-91,Mauro Cesar Silva da Costa,0.0,2025-04-28
+196.090.877-44,José Neves Monteiro,0.0,2025-04-25
+196.090.877-44,José Neves Monteiro,0.0,2025-04-26
+196.090.877-44,José Neves Monteiro,0.0,2025-04-27
+196.090.877-44,José Neves Monteiro,0.0,2025-04-28
+081.808.517-70,Antônio Cláudio Fernandes muniz,0.0,2025-04-25
+081.808.517-70,Antônio Cláudio Fernandes muniz,0.0,2025-04-26
+081.808.517-70,Antônio Cláudio Fernandes muniz,0.0,2025-04-27
+081.808.517-70,Antônio Cláudio Fernandes muniz,0.0,2025-04-28
+018.610.172-43,Marlene da silva costa,0.0,2025-04-25
+018.610.172-43,Marlene da silva costa,0.0,2025-04-26
+018.610.172-43,Marlene da silva costa,0.0,2025-04-27
+018.610.172-43,Marlene da silva costa,0.0,2025-04-28
+005.727.196-80,André Luiz Ferreira,0.0,2025-04-25
+005.727.196-80,André Luiz Ferreira,0.0,2025-04-26
+005.727.196-80,André Luiz Ferreira,0.0,2025-04-27
+005.727.196-80,André Luiz Ferreira,0.0,2025-04-28
+35.822.696/0001-16,Flávio Ferreira Lima,0.0,2025-04-25
+35.822.696/0001-16,Flávio Ferreira Lima,0.0,2025-04-26
+35.822.696/0001-16,Flávio Ferreira Lima,0.0,2025-04-27
+35.822.696/0001-16,Flávio Ferreira Lima,0.0,2025-04-28
+075.394.568-17,Jair Salvador Filho,0.0,2025-04-25
+075.394.568-17,Jair Salvador Filho,0.0,2025-04-26
+075.394.568-17,Jair Salvador Filho,0.0,2025-04-27
+075.394.568-17,Jair Salvador Filho,0.0,2025-04-28
+50.350.607/0001-70,Leandro Ferreira Do Carmo,0.0,2025-04-25
+50.350.607/0001-70,Leandro Ferreira Do Carmo,0.0,2025-04-26
+50.350.607/0001-70,Leandro Ferreira Do Carmo,0.0,2025-04-27
+50.350.607/0001-70,Leandro Ferreira Do Carmo,0.0,2025-04-28
+36.644.916/0001-21,Gleidson Widiney Divino da Silva,0.0,2025-04-25
+36.644.916/0001-21,Gleidson Widiney Divino da Silva,0.0,2025-04-26
+36.644.916/0001-21,Gleidson Widiney Divino da Silva,0.0,2025-04-27
+36.644.916/0001-21,Gleidson Widiney Divino da Silva,0.0,2025-04-28
+112.670.744-93,Edilene Barbosa da Silva,0.0,2025-04-25
+112.670.744-93,Edilene Barbosa da Silva,0.0,2025-04-26
+112.670.744-93,Edilene Barbosa da Silva,0.0,2025-04-27
+112.670.744-93,Edilene Barbosa da Silva,0.0,2025-04-28
+024.766.074-44,Luciene dos Santos Leite Alves,0.0,2025-04-25
+024.766.074-44,Luciene dos Santos Leite Alves,0.0,2025-04-26
+024.766.074-44,Luciene dos Santos Leite Alves,0.0,2025-04-27
+024.766.074-44,Luciene dos Santos Leite Alves,0.0,2025-04-28

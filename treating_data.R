@@ -34,7 +34,7 @@ load_packages <- function() {
 load_packages()
 library(googlesheets4)
 
-setwd("C:/Users/servi/inter-scraping/")
+setwd("C:/Users/Vitor/inter-scraping/")
 
 
 sheet_id = "1xifF_tAlbRp7kHBQyDqehH2kfyv-KxRXZBHVmGcA5qU"

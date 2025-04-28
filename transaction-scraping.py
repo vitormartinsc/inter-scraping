@@ -22,7 +22,7 @@ wait = WebDriverWait(driver, 10)
 """
 https://gestao.granitopagamentos.com.br/Login/Index
 sandro.leao@creditoessencial.com.br
-11S@ndr01003
+1011S@ndr0310
 """
 
 def change_window():
@@ -88,9 +88,9 @@ def search_by_cpf_cnpj(cpf_cnpj):
     )
     search_button.click()
 
-download_dir = r'C:\Users\servi\Downloads'
-initial_date = '06/03/2025'
-end_date = '07/03/2025'
+download_dir = r'C:\Users\vitor\Downloads'
+initial_date = '25/04/2025'
+end_date = '28/04/2025'
 
 def loop_in_lines(download_dir, initial_date, end_date):
     data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
@@ -155,6 +155,7 @@ def loop_in_lines(download_dir, initial_date, end_date):
         next_button.click()
         
 transaction_data = loop_in_lines(download_dir, initial_date, end_date)
+#transaction_data = pd.read_csv('transaction_data.csv')
 
 cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
 cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
