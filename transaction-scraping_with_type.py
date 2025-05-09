@@ -7,9 +7,10 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 import time
 import pandas as pd
+from datetime import datetime, timedelta
 
 # pasta inter scraping
-os.chdir('C:\\Users\\servi\\inter-scraping')
+os.chdir('C:\\Users\\vitor\\inter-scraping')
 
 #service = Service("C://Users//servi//inter-scraping//chromedriver-win64//chromedriver-win64//chromedriver.exe")
 options = Options()
@@ -90,12 +91,13 @@ def search_by_cpf_cnpj(cpf_cnpj):
     )
     search_button.click()
 
-download_dir = r'C:\Users\servi\Downloads'
-initial_date = '01/03/2025'
-end_date = '02/03/2025'
+download_dir = r'C:\Users\vitor\Downloads'
 
 def loop_in_lines(download_dir, initial_date, end_date):
-    data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
+    data = {
+        'cpf/cnpj': [], 'name': [], 'value': [], 'date': [],
+        'payment_method': [], 'installments': [], 'brand': []
+    }  # Updated dictionary to include additional fields
     
     while True:
         linhas = driver.find_elements(By.XPATH, "//table[@id='tabelaClientes']/tbody/tr")
@@ -125,22 +127,28 @@ def loop_in_lines(download_dir, initial_date, end_date):
                 aprovada_df['Valor'] = aprovada_df['Valor'].str.replace('.', '').str.replace(',', '.').astype(float)
                 aprovada_df['Data e hora'] = pd.to_datetime(aprovada_df['Data e hora'], dayfirst=True)
                 aprovada_df['Data'] = aprovada_df['Data e hora'].dt.date
-                resultado = aprovada_df.groupby(['Data', 'Tipo', 'Numero Parcelas'])['Valor'].sum()
+                resultado = aprovada_df.groupby(['Data', 'Tipo', 'Bandeira', 'Numero Parcelas'])['Valor'].sum()
 
-                for date, total_value in resultado.items():
+                for (date, payment_method, brand, installments), total_value in resultado.items():
                     data['cpf/cnpj'].append(id)
-                    data['value'].append(total_value)
                     data['name'].append(name)
+                    data['value'].append(total_value)
                     data['date'].append(date)
+                    data['payment_method'].append(payment_method)
+                    data['installments'].append(installments)
+                    data['brand'].append(brand)
                     transacoes.add(date)
 
             for date in pd.date_range(start=initial_date, end=end_date, freq='D'):
                 date_pure = date.date()
                 if date_pure not in transacoes:
                     data['cpf/cnpj'].append(id)
-                    data['value'].append(0)
                     data['name'].append(name)
+                    data['value'].append(0)
                     data['date'].append(date_pure)
+                    data['payment_method'].append(None)
+                    data['installments'].append(None)
+                    data['brand'].append(None)
 
             change_window()
             time.sleep(1)
@@ -155,26 +163,58 @@ def loop_in_lines(download_dir, initial_date, end_date):
         
         next_button = next_button_li.find_element(By.TAG_NAME, "a")
         next_button.click()
-        
-transaction_data = loop_in_lines(download_dir, initial_date, end_date)
-#transaction_data = pd.read_csv('data.csv').iloc[:, 1:].to_dict()
 
+# Define a pasta para salvar os arquivos CSV
+database_dir = os.path.join(os.getcwd(), 'database')
+os.makedirs(database_dir, exist_ok=True)
 
-cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
-cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
+# Define os intervalos de datas
+start_date = datetime.strptime('01/05/2025', '%d/%m/%Y')
+end_date = datetime.strptime('09/05/2025', '%d/%m/%Y')
 
-cpf_cnpj_transaction_data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}
+# Itera mês a mês
+current_date = start_date
+while current_date < end_date:
+    # Define o intervalo de datas para o loop
+    initial_date = current_date.strftime('%d/%m/%Y')
+    next_month = (current_date + timedelta(days=31)).replace(day=1)
+    final_date = (next_month - timedelta(days=1)).strftime('%d/%m/%Y')
 
-for cpf_cnpj in cpf_cnpj_data:
-    if cpf_cnpj not in transaction_data['cpf/cnpj']:
-        search_by_cpf_cnpj(cpf_cnpj)
-        user_data = loop_in_lines(download_dir, initial_date, end_date)  
+    print(f"Processando intervalo: {initial_date} a {final_date}")
 
-        for key in cpf_cnpj_transaction_data:
-            cpf_cnpj_transaction_data[key].extend(user_data.get(key, []))
+    # Executa o loop para o intervalo de datas
+    transaction_data = loop_in_lines(download_dir, initial_date, final_date)
 
-by_id_df = pd.DataFrame(cpf_cnpj_transaction_data)
-by_loop_df = pd.DataFrame(transaction_data)
+    # Salva o transaction_data em CSV
+    transaction_file = os.path.join(database_dir, f'transaction_data_{initial_date.replace("/", "-")}_to_{final_date.replace("/", "-")}.csv')
+    pd.DataFrame(transaction_data).to_csv(transaction_file, index=False)
+    print(f"Salvo: {transaction_file}")
 
-all_data = pd.concat([by_id_df, by_loop_df], ignore_index=True)  # Corrigido
-all_data.to_csv('data_04.csv', index=False)
+    # Processa os dados adicionais
+    cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
+    cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
+
+    cpf_cnpj_transaction_data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}
+
+    for cpf_cnpj in cpf_cnpj_data:
+        if cpf_cnpj not in transaction_data['cpf/cnpj']:
+            search_by_cpf_cnpj(cpf_cnpj)
+            user_data = loop_in_lines(download_dir, initial_date, final_date)
+
+            for key in cpf_cnpj_transaction_data:
+                cpf_cnpj_transaction_data[key].extend(user_data.get(key, []))
+
+    by_id_df = pd.DataFrame(cpf_cnpj_transaction_data)
+    by_loop_df = pd.DataFrame(transaction_data)
+
+    # Combina os dados e salva o all_data
+    all_data = pd.concat([by_id_df, by_loop_df], ignore_index=True)
+    all_data_file = os.path.join(database_dir, f'all_data_{initial_date.replace("/", "-")}_to_{final_date.replace("/", "-")}.csv')
+    all_data.to_csv(all_data_file, index=False)
+    print(f"Salvo: {all_data_file}")
+
+    # Avança para o próximo mês
+    current_date = next_month
+
+# Fecha o WebDriver
+driver.quit()

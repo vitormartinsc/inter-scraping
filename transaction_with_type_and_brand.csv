@@ -1,0 +1,241 @@
+cpf_cnpj,value,date,payment_method,installments,brand,name,state_name,fantasy_name
+029.913.726-05,1000,2025-02-25,Credito parcelado,5,MASTERCARD,Francisco José da Silva,MG,Francisco José da Silva
+54.112.002/0001-00,7,2025-02-22,Credito a vista,0,ELO,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,445,2025-02-22,Credito a vista,0,MASTERCARD,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,269,2025-02-22,Credito a vista,0,VISA,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,48,2025-02-22,Debito,0,ELO,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,260,2025-02-22,Debito,0,MASTERCARD,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,116,2025-02-22,Debito,0,VISA,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,76,2025-02-23,Credito a vista,0,ELO,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,323.5,2025-02-23,Credito a vista,0,MASTERCARD,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,152,2025-02-23,Credito a vista,0,VISA,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,27,2025-02-23,Debito,0,ELO,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,283,2025-02-23,Debito,0,MASTERCARD,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+54.112.002/0001-00,214,2025-02-23,Debito,0,VISA,54.112.002 AYARA ANTONIETA BAZILIO BARBOSA,MG,Ayara Antonieta Bazilio Barbosa
+863.943.046-20,950,2025-02-22,Credito parcelado,3,MASTERCARD,Nilton Nunes da Silva,MG,Nilton Nunes da Silva
+703.270.266-00,1,2025-02-21,Debito,0,MASTERCARD,Felipe assunção gomes,MG,Av rio negro
+703.270.266-00,15,2025-02-23,Credito a vista,0,MASTERCARD,Felipe assunção gomes,MG,Av rio negro
+703.270.266-00,25,2025-02-24,Credito a vista,0,MASTERCARD,Felipe assunção gomes,MG,Av rio negro
+703.270.266-00,25,2025-02-24,Debito,0,MASTERCARD,Felipe assunção gomes,MG,Av rio negro
+703.270.266-00,50,2025-02-24,Debito,0,VISA,Felipe assunção gomes,MG,Av rio negro
+040.525.196-39,55,2025-02-20,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,30,2025-02-20,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-02-21,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-02-21,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,98,2025-02-22,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,68,2025-02-22,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,151,2025-02-22,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-02-25,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-02-25,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-02-25,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+47.768.363/0001-35,39.8,2025-02-25,Debito,0,MASTERCARD,Rafael Aparecido da Silva,MG,Rafael Aparecido da Silva
+078.881.436-28,1,2025-02-22,Credito a vista,0,ELO,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,28,2025-02-22,Credito a vista,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,112,2025-02-22,Debito,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,19,2025-02-23,Credito a vista,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,45,2025-02-23,Credito a vista,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,49,2025-02-23,Debito,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,30,2025-02-23,Debito,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,37,2025-02-26,Credito a vista,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,33,2025-02-26,Debito,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+070.643.806-09,0.5,2025-02-26,Credito a vista,0,MASTERCARD,Mary Carla de Almeida,MG,Mary Carla de Almeida
+017.717.305-01,1,2025-02-22,Credito a vista,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+093.727.146-23,100,2025-03-25,Credito a vista,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,125,2025-03-27,Debito,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,250,2025-03-28,Credito a vista,0,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,150,2025-03-29,Credito a vista,0,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+017.841.496-40,120,2025-03-01,Credito a vista,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,29.5,2025-03-01,Credito a vista,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,117.3,2025-03-01,Debito,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,100,2025-03-01,Debito,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,33,2025-03-02,Credito a vista,0,ELO,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,312.5,2025-03-02,Credito a vista,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,120,2025-03-02,Credito a vista,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,80,2025-03-02,Debito,0,ELO,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,440,2025-03-02,Debito,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,140,2025-03-02,Debito,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,229,2025-03-03,Credito a vista,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,153,2025-03-03,Credito a vista,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,45,2025-03-03,Debito,0,ELO,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,355,2025-03-03,Debito,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,89,2025-03-03,Debito,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,36,2025-03-04,Credito a vista,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,16,2025-03-04,Credito a vista,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,103,2025-03-04,Debito,0,MASTERCARD,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+017.841.496-40,4,2025-03-04,Debito,0,VISA,Victor Emannuel Medeiros Silva,MG,Victor Emannuel Medeiros Silva
+029.913.726-05,1000,2025-03-09,Credito parcelado,5,MASTERCARD,Francisco José da Silva,MG,Francisco José da Silva
+029.913.726-05,1000,2025-03-09,Credito parcelado,5,VISA,Francisco José da Silva,MG,Francisco José da Silva
+029.913.726-05,700,2025-03-16,Credito parcelado,3,VISA,Francisco José da Silva,MG,Francisco José da Silva
+029.913.726-05,1000,2025-03-20,Credito parcelado,5,MASTERCARD,Francisco José da Silva,MG,Francisco José da Silva
+863.943.046-20,1073,2025-03-29,Credito parcelado,3,MASTERCARD,Nilton Nunes da Silva,MG,Nilton Nunes da Silva
+863.943.046-20,1100,2025-03-29,Credito parcelado,4,MASTERCARD,Nilton Nunes da Silva,MG,Nilton Nunes da Silva
+040.525.196-39,74,2025-03-01,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,55,2025-03-01,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,60,2025-03-01,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,170,2025-03-07,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-03-07,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-07,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,93,2025-03-07,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,247,2025-03-08,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,98,2025-03-08,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,45,2025-03-08,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,213.5,2025-03-08,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-08,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-10,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-11,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,50,2025-03-12,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,130,2025-03-12,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,72,2025-03-12,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-13,Credito a vista,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,236.75,2025-03-13,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-14,Credito a vista,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,60,2025-03-14,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-14,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,98,2025-03-14,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,37,2025-03-15,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,66,2025-03-15,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,105,2025-03-15,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,201,2025-03-15,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-17,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-17,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-17,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,30,2025-03-18,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-19,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,50,2025-03-19,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,60,2025-03-21,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-21,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,45,2025-03-21,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,37,2025-03-21,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,227,2025-03-21,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-22,Credito a vista,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,45,2025-03-22,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,55,2025-03-22,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-03-22,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,70,2025-03-24,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,63,2025-03-27,Credito a vista,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,113,2025-03-27,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,37,2025-03-28,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-03-28,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,55,2025-03-28,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,196,2025-03-29,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,33,2025-03-29,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,48,2025-03-29,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,36,2025-03-29,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+388.727.143-20,24,2025-03-01,Credito a vista,0,VISA,Cícero Elson Carlos da Silva,MG,Cícero Elson Carlos da Silva
+388.727.143-20,12,2025-03-01,Debito,0,ELO,Cícero Elson Carlos da Silva,MG,Cícero Elson Carlos da Silva
+388.727.143-20,24,2025-03-01,Debito,0,MASTERCARD,Cícero Elson Carlos da Silva,MG,Cícero Elson Carlos da Silva
+388.727.143-20,8,2025-03-01,Debito,0,VISA,Cícero Elson Carlos da Silva,MG,Cícero Elson Carlos da Silva
+742.617.386-00,20,2025-03-01,Credito a vista,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,310,2025-03-01,Credito a vista,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,179,2025-03-01,Credito a vista,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,12,2025-03-01,Debito,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,337,2025-03-01,Debito,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,177,2025-03-01,Debito,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,32,2025-03-02,Credito a vista,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,585,2025-03-02,Credito a vista,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,290,2025-03-02,Credito a vista,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,12,2025-03-02,Debito,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,456.01,2025-03-02,Debito,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,132,2025-03-02,Debito,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,10,2025-03-03,Credito a vista,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,237,2025-03-03,Credito a vista,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,100,2025-03-03,Credito a vista,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,26,2025-03-03,Debito,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,468,2025-03-03,Debito,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,111,2025-03-03,Debito,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,141.01,2025-03-04,Credito a vista,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,78,2025-03-04,Credito a vista,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,10,2025-03-04,Debito,0,ELO,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,317,2025-03-04,Debito,0,MASTERCARD,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+742.617.386-00,76,2025-03-04,Debito,0,VISA,MARIA DULCINEIA PEREIRA OLIVEIRA,MG,MARIA DULCINEIA PEREIRA OLIVEIRA
+078.881.436-28,3,2025-03-01,Credito a vista,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,30,2025-03-01,Debito,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,5,2025-03-02,Credito a vista,0,ELO,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,197,2025-03-02,Credito a vista,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,65,2025-03-02,Credito a vista,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,34,2025-03-02,Debito,0,ELO,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,358,2025-03-02,Debito,0,MASTERCARD,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+078.881.436-28,63,2025-03-02,Debito,0,VISA,Paloma Roberta Bispo das Mercês,MG,Paloma Roberta Bispo das Mercês
+070.643.806-09,17,2025-03-01,Credito a vista,0,VISA,Mary Carla de Almeida,MG,Mary Carla de Almeida
+070.643.806-09,35,2025-03-03,Credito a vista,0,MASTERCARD,Mary Carla de Almeida,MG,Mary Carla de Almeida
+070.643.806-09,62,2025-03-03,Credito a vista,0,VISA,Mary Carla de Almeida,MG,Mary Carla de Almeida
+070.643.806-09,8,2025-03-03,Debito,0,ELO,Mary Carla de Almeida,MG,Mary Carla de Almeida
+070.643.806-09,18.5,2025-03-03,Debito,0,VISA,Mary Carla de Almeida,MG,Mary Carla de Almeida
+017.717.305-01,12,2025-03-01,Debito,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,336,2025-03-02,Credito a vista,0,MASTERCARD,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,210,2025-03-02,Credito a vista,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,254,2025-03-02,Debito,0,MASTERCARD,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,139,2025-03-02,Debito,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,108,2025-03-03,Credito a vista,0,MASTERCARD,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,62,2025-03-03,Credito a vista,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,278,2025-03-03,Debito,0,MASTERCARD,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+017.717.305-01,26,2025-03-03,Debito,0,VISA,MONIKE PEREIRA DE OLIVEIRA,MG,MONIKE PEREIRA DE OLIVEIRA
+989.024.666-04,240,2025-03-01,Credito a vista,0,MASTERCARD,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+989.024.666-04,58,2025-03-01,Credito a vista,0,VISA,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+989.024.666-04,296,2025-03-01,Debito,0,MASTERCARD,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+989.024.666-04,25,2025-03-01,Debito,0,VISA,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+989.024.666-04,5,2025-03-03,Credito a vista,0,VISA,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+989.024.666-04,1,2025-03-03,Debito,0,MASTERCARD,Nilo Furtado Teodoro,MG,Nilo Furtado Teodoro
+093.727.146-23,105,2025-05-02,Credito a vista,0,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,135,2025-05-02,Credito parcelado,2,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,95,2025-05-02,Credito parcelado,2,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,90,2025-05-03,Credito a vista,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,90,2025-05-03,Debito,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,110,2025-05-05,Credito parcelado,2,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,240,2025-05-05,Credito parcelado,2,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,155,2025-05-07,Credito a vista,0,MASTERCARD,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,45,2025-05-07,Credito a vista,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+093.727.146-23,100,2025-05-09,Debito,0,VISA,Filipe Rodrigues de Oliveira,MG,STUDIO Filipe Rodrigues
+040.525.196-39,37,2025-05-01,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-05-01,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,55,2025-05-02,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-05-03,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,37,2025-05-03,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,37,2025-05-03,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,25,2025-05-05,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,102,2025-05-06,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,96,2025-05-06,Credito a vista,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,70,2025-05-07,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,55,2025-05-07,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,128,2025-05-07,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,50,2025-05-08,Debito,0,ELO,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,233,2025-05-08,Debito,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,70,2025-05-08,Debito,0,VISA,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+040.525.196-39,110,2025-05-09,Credito a vista,0,MASTERCARD,Cícero Sousa Araújo Filho,MG,Cícero Sousa Araújo Filho
+57.923.595/0001-74,39.98,2025-05-01,Credito a vista,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,24.99,2025-05-01,Debito,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,16.990000000000002,2025-05-01,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,88.97,2025-05-01,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,85.96000000000001,2025-05-02,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,22.99,2025-05-02,Credito a vista,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,98.96,2025-05-02,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,160.42,2025-05-02,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,29.99,2025-05-03,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,111.95,2025-05-03,Debito,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,12.49,2025-05-03,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,98.96,2025-05-03,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,40.98,2025-05-04,Credito a vista,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,30.97,2025-05-04,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,32.97,2025-05-04,Credito a vista,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,87.96,2025-05-04,Debito,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,101.93,2025-05-04,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,156.93,2025-05-04,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,47.97,2025-05-05,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,31.97,2025-05-06,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,40.98,2025-05-06,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,112.93,2025-05-07,Credito a vista,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,21.98,2025-05-07,Credito a vista,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,78,2025-05-07,Debito,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,80.97,2025-05-07,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,16.99,2025-05-07,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,7,2025-05-08,Credito a vista,0,ELO,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,21,2025-05-08,Debito,0,MASTERCARD,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+57.923.595/0001-74,29.98,2025-05-08,Debito,0,VISA,Matheus Vitor Machado Ribeiro,MG,Matheus Vitor Machado Ribeiro
+047.491.696-09,150,2025-05-03,Credito a vista,0,MASTERCARD,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+047.491.696-09,230,2025-05-03,Credito a vista,0,VISA,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+047.491.696-09,347,2025-05-03,Debito,0,MASTERCARD,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+047.491.696-09,3,2025-05-03,Debito,0,VISA,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+047.491.696-09,200,2025-05-05,Credito a vista,0,MASTERCARD,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+047.491.696-09,100,2025-05-05,Debito,0,MASTERCARD,Rafael Augusto Andrade Pertence,MG,Rafael Augusto Andrade Pertence
+953.975.666-91,500,2025-05-03,Credito a vista,0,ELO,Jader Antônio dos Santos Reis,MG,Jader Antônio dos Santos Reis
+953.975.666-91,2270,2025-05-08,Credito parcelado,7,VISA,Jader Antônio dos Santos Reis,MG,Jader Antônio dos Santos Reis

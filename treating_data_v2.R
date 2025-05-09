@@ -119,8 +119,8 @@ db_own <- read_excel(temp_file, sheet = sheet_name, skip = 2) # Ajuste a aba con
 new_db_own <- read_csv('relatorio_diario_own.csv')
 
 new_db_own %>% 
-  select(`CNPJ Estabelecimento`, `Data Métrica`, `VGT`) %>% 
-  rename(date = 2, value = 3) %>% 
+  select(`CNPJ Estabelecimento`, `Razão Social`,`Data Métrica`, `VGT`) %>% 
+  rename(date = 3, value = 4) %>% 
   mutate(
     date = dmy(date),
     value = value %>% 
@@ -131,25 +131,26 @@ new_db_own %>%
       as.numeric(),
     `CNPJ Estabelecimento` = as.numeric(`CNPJ Estabelecimento`)
   ) %>% 
-  group_by(`CNPJ Estabelecimento`, date) %>% 
-  summarise(value = sum(value), .groups = 'drop') -> new_db_own_transformed
+  group_by(`CNPJ Estabelecimento`, `Razão Social`, date) %>% 
+  summarise(value = sum(value), .groups = 'drop') %>% 
+  rename('RAZÃO SOCIAL' = `Razão Social`) -> new_db_own_transformed
 
 db_own %>% 
   gather(date, value, -c(1:6)) %>% 
-  
+  group_by(`Nome Fantasia`) %>% 
+  mutate(`RAZÃO SOCIAL` = ifelse(is.na(`RAZÃO SOCIAL`), first(`RAZÃO SOCIAL`), `RAZÃO SOCIAL`)) %>% 
   mutate(date = if_else(
     grepl('/', date), 
     dmy(date), 
     as.Date(as.numeric(date), origin = "1899-12-30")
   ))  %>% 
-  
   filter(!date %in% unique(new_db_own_transformed$date)) %>% 
   full_join(new_db_own_transformed) %>% 
   mutate(value = ifelse(is.na(value), 0, value)) %>% 
   group_by(`CNPJ Estabelecimento`) %>% 
   mutate(
     `Nº` = ifelse(is.na(`Nº`), first(`Nº`), `Nº`),
-    `...3` = ifelse(is.na(`...3`), first(`...3`), `...3`),
+    #`...3` = ifelse(is.na(`...3`), first(`...3`), `...3`),
     `Nome Fantasia` = ifelse(is.na(`Nome Fantasia`), first(`Nome Fantasia`), `Nome Fantasia`),
     ACM = sum(value),
   ) %>% 
@@ -162,6 +163,10 @@ db_own %>%
   arrange(date) %>% 
   mutate(date = format(date, '%d/%m/%Y')) %>% 
   mutate(date = factor(date, levels = .$date %>% unique)) %>% 
+  group_by(date, `CNPJ Estabelecimento`) %>% 
+  filter(value == max(value)) %>% 
+  ungroup %>% 
+  distinct(date, value, `CNPJ Estabelecimento`, .keep_all = T) %>% 
   spread(date, value) %>% 
   mutate_if(is.numeric, ~ifelse(is.na(.), 0, .)) -> db_own_final
 
