@@ -29,6 +29,7 @@ sandro.leao@creditoessencial.com.br
 """
 
 def change_window():
+    
     link_pesquisa = WebDriverWait(driver, 10).until(
         EC.element_to_be_clickable((By.LINK_TEXT, "Pesquisa"))
     )
@@ -130,6 +131,13 @@ def loop_in_lines(download_dir, initial_date, end_date):
                 resultado = aprovada_df.groupby(['Data', 'Tipo', 'Bandeira', 'Numero Parcelas'])['Valor'].sum()
 
                 for (date, payment_method, brand, installments), total_value in resultado.items():
+                    # Verifica se há valores nulos em payment_method, brand ou installments
+                    if (pd.isnull(payment_method) or pd.isnull(brand) or 
+                        pd.isnull(installments) or 
+                        brand not in ["MASTERCARD", "VISA", "ELO","AMEX"]):         
+                                                  
+                        breakpoint()  # Ignora registros com valores nulos
+
                     data['cpf/cnpj'].append(id)
                     data['name'].append(name)
                     data['value'].append(total_value)
@@ -138,17 +146,6 @@ def loop_in_lines(download_dir, initial_date, end_date):
                     data['installments'].append(installments)
                     data['brand'].append(brand)
                     transacoes.add(date)
-
-            for date in pd.date_range(start=initial_date, end=end_date, freq='D'):
-                date_pure = date.date()
-                if date_pure not in transacoes:
-                    data['cpf/cnpj'].append(id)
-                    data['name'].append(name)
-                    data['value'].append(0)
-                    data['date'].append(date_pure)
-                    data['payment_method'].append(None)
-                    data['installments'].append(None)
-                    data['brand'].append(None)
 
             change_window()
             time.sleep(1)
@@ -169,16 +166,16 @@ database_dir = os.path.join(os.getcwd(), 'database')
 os.makedirs(database_dir, exist_ok=True)
 
 # Define os intervalos de datas
-start_date = datetime.strptime('01/05/2025', '%d/%m/%Y')
-end_date = datetime.strptime('09/05/2025', '%d/%m/%Y')
+start_date = datetime.strptime('12/05/2025', '%d/%m/%Y')
+end_date = datetime.strptime('22/05/2025', '%d/%m/%Y')
 
 # Itera mês a mês
 current_date = start_date
 while current_date < end_date:
     # Define o intervalo de datas para o loop
     initial_date = current_date.strftime('%d/%m/%Y')
-    next_month = (current_date + timedelta(days=31)).replace(day=1)
-    final_date = (next_month - timedelta(days=1)).strftime('%d/%m/%Y')
+    next_date = current_date + timedelta(days=30)  # Limita o intervalo a 30 dias
+    final_date = min(next_date, end_date).strftime('%d/%m/%Y')  # Garante que final_date não ultrapasse end_date
 
     print(f"Processando intervalo: {initial_date} a {final_date}")
 
@@ -214,7 +211,7 @@ while current_date < end_date:
     print(f"Salvo: {all_data_file}")
 
     # Avança para o próximo mês
-    current_date = next_month
+    current_date = next_date
 
 # Fecha o WebDriver
 driver.quit()

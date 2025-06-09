@@ -89,8 +89,8 @@ def search_by_cpf_cnpj(cpf_cnpj):
     search_button.click()
 
 download_dir = r'C:\Users\vitor\Downloads'
-initial_date = '25/04/2025'
-end_date = '28/04/2025'
+initial_date = '22/05/2025'
+end_date = '23/04/2025'
 
 def loop_in_lines(download_dir, initial_date, end_date):
     data = {'cpf/cnpj': [], 'name': [], 'value': [], 'date': []}  # Iniciando um novo dicionário
