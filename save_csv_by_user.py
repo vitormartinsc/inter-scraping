@@ -140,7 +140,7 @@ def main():
     database_dir = os.path.join(os.getcwd(), 'database')
     os.makedirs(database_dir, exist_ok=True)
     start_date = datetime.strptime('06/06/2025', '%d/%m/%Y')
-    end_date = datetime.strptime('10/06/2025', '%d/%m/%Y')
+    end_date = datetime.strptime('11/06/2025', '%d/%m/%Y')
     # Selenium
     options = Options()
     options.add_argument('--no-sandbox')
