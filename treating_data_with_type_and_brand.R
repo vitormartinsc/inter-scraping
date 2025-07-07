@@ -134,3 +134,4 @@ tryCatch({
 
 # Escreve no Google Sheets (substitui a aba "Transações")
 sheet_write(final_db_sheet, ss = sheet_id, sheet = "Página2")
+

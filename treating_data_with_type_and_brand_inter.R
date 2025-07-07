@@ -125,7 +125,8 @@ final_db_sheet <- full_db %>%
 final_db_sheet <- final_db_sheet %>%
   mutate(Nome = if_else(is.na(Nome) | Nome == "", 
                         db_clientes_data$name[match(`CPF/CNPJ`, db_clientes_data$cpf_cnpj)],
-                        Nome))
+                        Nome),
+        `Meio de Pagamento` = ifelse(`Meio de Pagamento` == 'Não se aplica', 'Pix', `Meio de Pagamento`))
 
 # Salva localmente (opcional) com tratamento de erro
 tryCatch({

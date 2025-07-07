@@ -1,0 +1,4 @@
+PDV;Data e hora;Tipo;Valor;Numero Parcelas;Status;Bandeira;NSU;NSU HOST;Cartao;Cod. Retorno;Id;Forma Captura;Elegivel Antecipacao
+0001;05/06/2025 15:13:15;Credito a vista;45,00;0;Aprovada;VISA;001138;;4219584853;00;1316054291;Chip;1
+0001;05/06/2025 09:11:08;Credito parcelado;224,70;2;Aprovada;MASTERCARD;001136;;5162924412;00;1315788439;Chip;1
+0001;04/06/2025 10:06:18;Credito a vista;184,70;0;Aprovada;AMEX;001134;012558285450303;3764872949;00;1315169051;Chip;1
