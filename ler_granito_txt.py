@@ -213,6 +213,41 @@ def merge_db_inter(pasta_csv, arquivo_saida):
     df_final.to_csv(arquivo_saida, index=False, encoding='utf-8')
     print(f'Mesclagem concluída! Arquivo salvo em: {arquivo_saida}')
 
+def processar_arquivos_locais():
+    """Processa apenas os arquivos TXT que já estão na pasta local"""
+    local_txt_dir = "./database/stpf_data"
+    local_csv_dir = "./database/inter_stpf_data"
+    
+    os.makedirs(local_csv_dir, exist_ok=True)
+    
+    # Lista arquivos já processados (csv gerado)
+    arquivos_processados = set(
+        os.path.splitext(f)[0] for f in os.listdir(local_csv_dir) if f.lower().endswith('.csv')
+    )
+    
+    # Lista todos os arquivos TXT na pasta local
+    if not os.path.exists(local_txt_dir):
+        print(f"❌ Pasta {local_txt_dir} não encontrada!")
+        return
+    
+    arquivos_txt = [f for f in os.listdir(local_txt_dir) if f.lower().endswith('.txt')]
+    novos_arquivos = [arq for arq in arquivos_txt if os.path.splitext(arq)[0] not in arquivos_processados]
+    
+    if not novos_arquivos:
+        print("✅ Todos os arquivos TXT já foram processados!")
+        return
+    
+    print(f"📁 Encontrados {len(novos_arquivos)} arquivos TXT para processar...")
+    
+    for arquivo in novos_arquivos:
+        caminho_txt = os.path.join(local_txt_dir, arquivo)
+        print(f"🔄 Processando: {arquivo}")
+        gerar_csv_do_txt(caminho_txt, local_csv_dir)
+    
+    print(f"✅ {len(novos_arquivos)} arquivos processados com sucesso!")
+
 if __name__ == '__main__':
-    baixar_txt_e_gerar_csv()
+    # Processar arquivos TXT locais (sem download)
+    processar_arquivos_locais()
+    # Mesclar todos os CSVs em um arquivo final
     merge_db_inter('./database/inter_stpf_data', 'db_inter_merged.csv')
