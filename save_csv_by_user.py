@@ -3,6 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service
 import os
 import time
 import pandas as pd
@@ -136,16 +138,31 @@ def loop_and_save_by_lines(driver, download_dir, initial_date, end_date, databas
 
 def main():
     # Configurações
-    download_dir = r'C:\Users\vitor\Downloads'
+    download_dir = os.path.expanduser('~/Downloads')  # Caminho padrão do Linux
     database_dir = os.path.join(os.getcwd(), 'database')
     os.makedirs(database_dir, exist_ok=True)
     start_date = datetime.strptime('01/06/2025', '%d/%m/%Y')
     end_date = datetime.strptime('28/06/2025', '%d/%m/%Y')
-    # Selenium
+    
+    # Selenium com ChromeDriver Manager
     options = Options()
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
-    driver = webdriver.Chrome(options=options)
+    # Opcional: executar em headless mode (sem interface gráfica)
+    # options.add_argument('--headless')
+    
+    # Configurar diretório de download
+    prefs = {
+        "download.default_directory": download_dir,
+        "download.prompt_for_download": False,
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True
+    }
+    options.add_experimental_option("prefs", prefs)
+    
+    # Inicializar o driver com webdriver-manager
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
     wait = WebDriverWait(driver, 10)
     driver.get('https://gestao.granitopagamentos.com.br/Login/Index')
     # --- Faça o login manualmente ou automatize aqui ---

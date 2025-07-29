@@ -1,0 +1,130 @@
+📧 TICKET PARA SUPORTE AWS - PROBLEMA DE CONECTIVIDADE EC2
+
+**ASSUNTO:** MÚLTIPLAS Instâncias EC2 não respondem a ping/SSH - Problema Generalizado
+
+**DESCRIÇÃO DO PROBLEMA:**
+Estamos enfrentando um problema generalizado onde MÚLTIPLAS instâncias EC2 aparecem como "running" no console, mas não respondem a ping nem SSH de qualquer origem, incluindo AWS CloudShell. Isso afeta pelo menos 2 instâncias diferentes em nossa conta.
+
+**INSTÂNCIAS AFETADAS:**
+
+**INSTÂNCIA 1:**
+- ID da Instância: i-07daa26dd07413cb2
+- Nome: inter-scraping-instance
+- Tipo: t3.medium
+- IP Público: 3.18.111.35
+- Criada em: 29/07/2025
+
+**INSTÂNCIA 2:**
+- ID da Instância: i-08bffcc42c37c8fc8
+- Nome: Servidor SFTP
+- Tipo: t2.micro  
+- IP Público: 13.59.195.73
+- Instância mais antiga (estava funcionando anteriormente)
+
+**DETALHES TÉCNICOS GERAIS:**
+- ID da Instância: i-07daa26dd07413cb2
+- Região: us-east-2
+- AMI: ami-0862be96e41dcbf74 (Ubuntu 24.04 LTS)
+- Tipo da Instância: t3.medium
+- IP Público: 3.18.111.35
+- IP Privado: 172.31.32.91
+- Subnet: subnet-09c0fc7f56e2b1f22
+- Security Group: sg-09051965482b2bce7
+- VPC: vpc-03eb73aae1a5d30c3
+- Par de Chaves: par-chaves
+
+**COMPORTAMENTO OBSERVADO (AMBAS INSTÂNCIAS):**
+1. Status das instâncias: "running"
+2. Verificações do sistema: OK
+3. Verificações das instâncias: OK
+4. Timeout de ping de múltiplas origens (local, AWS CloudShell)
+5. Timeout de conexão SSH na porta 22
+6. Sem resposta de qualquer protocolo de rede
+
+**IMPORTANTE:** A instância "Servidor SFTP" estava funcionando normalmente até recentemente, o que indica que este pode ser um problema da infraestrutura AWS e não de configuração.
+
+**TESTES REALIZADOS (AMBAS INSTÂNCIAS):**
+✅ Instâncias aparecem saudáveis no console
+✅ Security Groups permitem SSH (0.0.0.0/0:22)
+✅ Subnet tem mapeamento de IP público habilitado
+✅ Testado do AWS CloudShell (mesmo resultado)
+✅ Limites da conta são normais (2/20 instâncias)
+❌ Ping falha de todas as origens para AMBAS as instâncias
+❌ SSH falha de todas as origens para AMBAS as instâncias
+❌ Sem conectividade de rede com NENHUMA das instâncias
+
+**EVIDÊNCIA DE PROBLEMA SISTÊMICO:**
+- Servidor SFTP (i-08bffcc42c37c8fc8) estava funcionando até recentemente
+- Problema afeta instâncias de tipos diferentes (t2.micro e t3.medium)
+- Ambas na mesma região (us-east-2)
+- Mesmo comportamento em instâncias criadas em momentos diferentes
+
+**CONFIGURAÇÕES DE SEGURANÇA:**
+Regras do Security Group:
+- Entrada: SSH (22) de 0.0.0.0/0
+- Entrada: HTTP (80) de 0.0.0.0/0  
+- Entrada: HTTPS (443) de 0.0.0.0/0
+- Saída padrão: Todo tráfego
+
+**SUSPEITAS (REVISADAS):**
+1. ❗ PROBLEMA DA INFRAESTRUTURA AWS na região us-east-2
+2. Problema de rede/roteamento na região
+3. Possível incident não reportado afetando conectividade
+4. Problema com internet gateway ou NAT na nossa VPC
+5. Issue com availability zone us-east-2c
+
+**SOLICITAÇÃO URGENTE:**
+Por favor, investiguem IMEDIATAMENTE:
+1. Status da infraestrutura AWS em us-east-2
+2. Problemas de conectividade regionais
+3. Status do internet gateway da nossa VPC
+4. Incidents não reportados que possam estar afetando nossa conta
+5. Logs internos das instâncias para identificar a causa raiz
+
+**URGÊNCIA:** ALTA - PROBLEMA SISTÊMICO
+**IMPACTO:** CRÍTICO - Múltiplas instâncias de produção inacessíveis
+
+**INFORMAÇÕES ADICIONAIS:**
+- ID da Conta: 135699253319
+- Região: us-east-2
+- Testado de múltiplas origens/IPs
+- Problema persiste há várias horas
+
+---
+
+**COMANDOS PARA ANEXAR AO TICKET:**
+
+aws ec2 describe-instances --instance-ids i-07daa26dd07413cb2 --region us-east-2
+
+aws ec2 describe-security-groups --group-ids sg-09051965482b2bce7 --region us-east-2
+
+aws ec2 get-console-output --instance-id i-07daa26dd07413cb2 --region us-east-2
+
+aws ec2 describe-instance-status --instance-ids i-07daa26dd07413cb2 --region us-east-2
+
+---
+
+**AÇÕES TOMADAS:**
+1. Verificamos os security groups
+2. Testamos de múltiplas origens
+3. Confirmamos configuração de rede
+4. Descartamos problemas de conta/cobrança
+5. Criamos arquivo de debug com informações técnicas completas
+
+**RESULTADOS DOS TESTES:**
+- Ping para 3.18.111.35 (t3.medium): FALHOU
+- Ping para 13.59.195.73 (t2.micro): FALHOU  
+- SSH para ambas as instâncias: FALHOU
+- Teste do AWS CloudShell: FALHOU para ambas
+- Todos os status checks da AWS: PASSOU para ambas
+- Verificações de security group: CORRETAS para ambas
+
+**TIMELINE DO PROBLEMA:**
+- Servidor SFTP funcionava normalmente até hoje
+- Nova instância criada hoje nunca funcionou
+- Problema detectado simultaneamente em ambas
+- Indica problema sistêmico da AWS, não de configuração
+
+**ARQUIVOS ANEXOS:**
+- aws_debug_info.txt (saídas completas dos comandos AWS)
+- create_ec2_instance.sh (script usado para criar a instância)

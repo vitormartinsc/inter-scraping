@@ -1,0 +1,253 @@
+=== INSTANCE DETAILS ===
+{
+    "Reservations": [
+        {
+            "ReservationId": "r-0886acc7f01b90c64",
+            "OwnerId": "135699253319",
+            "Groups": [],
+            "Instances": [
+                {
+                    "Architecture": "x86_64",
+                    "BlockDeviceMappings": [
+                        {
+                            "DeviceName": "/dev/sda1",
+                            "Ebs": {
+                                "AttachTime": "2025-07-29T13:56:41+00:00",
+                                "DeleteOnTermination": true,
+                                "Status": "attached",
+                                "VolumeId": "vol-0b40ce9cbfbc569e3"
+                            }
+                        }
+                    ],
+                    "ClientToken": "af626155-1b76-4f41-b1c4-876f65f3c1f6",
+                    "EbsOptimized": false,
+                    "EnaSupport": true,
+                    "Hypervisor": "xen",
+                    "NetworkInterfaces": [
+                        {
+                            "Association": {
+                                "IpOwnerId": "amazon",
+                                "PublicDnsName": "ec2-3-18-111-35.us-east-2.compute.amazonaws.com",
+                                "PublicIp": "3.18.111.35"
+                            },
+                            "Attachment": {
+                                "AttachTime": "2025-07-29T13:56:40+00:00",
+                                "AttachmentId": "eni-attach-0d1e47bc8564e9a0f",
+                                "DeleteOnTermination": true,
+                                "DeviceIndex": 0,
+                                "Status": "attached",
+                                "NetworkCardIndex": 0
+                            },
+                            "Description": "",
+                            "Groups": [
+                                {
+                                    "GroupId": "sg-09051965482b2bce7",
+                                    "GroupName": "inter-scraping-sg"
+                                }
+                            ],
+                            "Ipv6Addresses": [],
+                            "MacAddress": "0a:a8:1c:37:a3:df",
+                            "NetworkInterfaceId": "eni-06359b32f8b41c8df",
+                            "OwnerId": "135699253319",
+                            "PrivateDnsName": "ip-172-31-32-91.us-east-2.compute.internal",
+                            "PrivateIpAddress": "172.31.32.91",
+                            "PrivateIpAddresses": [
+                                {
+                                    "Association": {
+                                        "IpOwnerId": "amazon",
+                                        "PublicDnsName": "ec2-3-18-111-35.us-east-2.compute.amazonaws.com",
+                                        "PublicIp": "3.18.111.35"
+                                    },
+                                    "Primary": true,
+                                    "PrivateDnsName": "ip-172-31-32-91.us-east-2.compute.internal",
+                                    "PrivateIpAddress": "172.31.32.91"
+                                }
+                            ],
+                            "SourceDestCheck": true,
+                            "Status": "in-use",
+                            "SubnetId": "subnet-09c0fc7f56e2b1f22",
+                            "VpcId": "vpc-03eb73aae1a5d30c3",
+                            "InterfaceType": "interface",
+                            "Operator": {
+                                "Managed": false
+                            }
+                        }
+                    ],
+                    "RootDeviceName": "/dev/sda1",
+                    "RootDeviceType": "ebs",
+                    "SecurityGroups": [
+                        {
+                            "GroupId": "sg-09051965482b2bce7",
+                            "GroupName": "inter-scraping-sg"
+                        }
+                    ],
+                    "SourceDestCheck": true,
+                    "Tags": [
+                        {
+                            "Key": "Project",
+                            "Value": "inter-scraping"
+                        },
+                        {
+                            "Key": "Name",
+                            "Value": "inter-scraping-instance"
+                        }
+                    ],
+                    "VirtualizationType": "hvm",
+                    "CpuOptions": {
+                        "CoreCount": 1,
+                        "ThreadsPerCore": 2
+                    },
+                    "CapacityReservationSpecification": {
+                        "CapacityReservationPreference": "open"
+                    },
+                    "HibernationOptions": {
+                        "Configured": false
+                    },
+                    "MetadataOptions": {
+                        "State": "applied",
+                        "HttpTokens": "required",
+                        "HttpPutResponseHopLimit": 2,
+                        "HttpEndpoint": "enabled",
+                        "HttpProtocolIpv6": "disabled",
+                        "InstanceMetadataTags": "disabled"
+                    },
+                    "EnclaveOptions": {
+                        "Enabled": false
+                    },
+                    "BootMode": "uefi-preferred",
+                    "PlatformDetails": "Linux/UNIX",
+                    "UsageOperation": "RunInstances",
+                    "UsageOperationUpdateTime": "2025-07-29T13:56:40+00:00",
+                    "PrivateDnsNameOptions": {
+                        "HostnameType": "ip-name",
+                        "EnableResourceNameDnsARecord": false,
+                        "EnableResourceNameDnsAAAARecord": false
+                    },
+                    "MaintenanceOptions": {
+                        "AutoRecovery": "default",
+                        "RebootMigration": "default"
+                    },
+                    "CurrentInstanceBootMode": "uefi",
+                    "NetworkPerformanceOptions": {
+                        "BandwidthWeighting": "default"
+                    },
+                    "Operator": {
+                        "Managed": false
+                    },
+                    "InstanceId": "i-07daa26dd07413cb2",
+                    "ImageId": "ami-0862be96e41dcbf74",
+                    "State": {
+                        "Code": 16,
+                        "Name": "running"
+                    },
+                    "PrivateDnsName": "ip-172-31-32-91.us-east-2.compute.internal",
+                    "PublicDnsName": "ec2-3-18-111-35.us-east-2.compute.amazonaws.com",
+                    "StateTransitionReason": "",
+                    "KeyName": "par-chaves",
+                    "AmiLaunchIndex": 0,
+                    "ProductCodes": [],
+                    "InstanceType": "t3.medium",
+                    "LaunchTime": "2025-07-29T13:56:40+00:00",
+                    "Placement": {
+                        "GroupName": "",
+                        "Tenancy": "default",
+                        "AvailabilityZone": "us-east-2c"
+                    },
+                    "Monitoring": {
+                        "State": "disabled"
+                    },
+                    "SubnetId": "subnet-09c0fc7f56e2b1f22",
+                    "VpcId": "vpc-03eb73aae1a5d30c3",
+                    "PrivateIpAddress": "172.31.32.91",
+                    "PublicIpAddress": "3.18.111.35"
+                }
+            ]
+        }
+    ]
+}
+
+=== SECURITY GROUP ===
+{
+    "SecurityGroups": [
+        {
+            "GroupId": "sg-09051965482b2bce7",
+            "IpPermissionsEgress": [
+                {
+                    "IpProtocol": "-1",
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ],
+            "VpcId": "vpc-03eb73aae1a5d30c3",
+            "SecurityGroupArn": "arn:aws:ec2:us-east-2:135699253319:security-group/sg-09051965482b2bce7",
+            "OwnerId": "135699253319",
+            "GroupName": "inter-scraping-sg",
+            "Description": "Security group para scraping Inter",
+            "IpPermissions": [
+                {
+                    "IpProtocol": "tcp",
+                    "FromPort": 22,
+                    "ToPort": 22,
+                    "UserIdGroupPairs": [],
+                    "IpRanges": [
+                        {
+                            "CidrIp": "0.0.0.0/0"
+                        }
+                    ],
+                    "Ipv6Ranges": [],
+                    "PrefixListIds": []
+                }
+            ]
+        }
+    ]
+}
+
+=== INSTANCE STATUS ===
+{
+    "InstanceStatuses": [
+        {
+            "AvailabilityZone": "us-east-2c",
+            "Operator": {
+                "Managed": false
+            },
+            "InstanceId": "i-07daa26dd07413cb2",
+            "InstanceState": {
+                "Code": 16,
+                "Name": "running"
+            },
+            "InstanceStatus": {
+                "Details": [
+                    {
+                        "Name": "reachability",
+                        "Status": "passed"
+                    }
+                ],
+                "Status": "ok"
+            },
+            "SystemStatus": {
+                "Details": [
+                    {
+                        "Name": "reachability",
+                        "Status": "passed"
+                    }
+                ],
+                "Status": "ok"
+            },
+            "AttachedEbsStatus": {
+                "Details": [
+                    {
+                        "Name": "reachability",
+                        "Status": "passed"
+                    }
+                ],
+                "Status": "ok"
+            }
+        }
+    ]
+}

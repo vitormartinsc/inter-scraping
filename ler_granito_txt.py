@@ -247,7 +247,16 @@ def processar_arquivos_locais():
     print(f"✅ {len(novos_arquivos)} arquivos processados com sucesso!")
 
 if __name__ == '__main__':
-    # Processar arquivos TXT locais (sem download)
-    processar_arquivos_locais()
+    import sys
+    
+    # Verificar se foi passado argumento para usar o modo antigo
+    if len(sys.argv) > 1 and sys.argv[1] == '--download':
+        print("🌐 Modo DOWNLOAD: Baixando arquivos via SFTP...")
+        baixar_txt_e_gerar_csv()
+    else:
+        print("📁 Modo LOCAL: Processando arquivos já baixados...")
+        # Processar arquivos TXT locais (sem download)
+        processar_arquivos_locais()
+    
     # Mesclar todos os CSVs em um arquivo final
     merge_db_inter('./database/inter_stpf_data', 'db_inter_merged.csv')
