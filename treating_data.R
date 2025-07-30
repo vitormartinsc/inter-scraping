@@ -34,10 +34,14 @@ load_packages <- function() {
 load_packages()
 library(googlesheets4)
 
+# Carrega configurações
+source("config.R")
+load_env()
+
 setwd("C:/Users/Vitor/inter-scraping/")
 
-
-sheet_id = "1xifF_tAlbRp7kHBQyDqehH2kfyv-KxRXZBHVmGcA5qU"
+# Usa função segura para obter ID da planilha
+sheet_id <- get_sheet_id("tpv")
 db <- read_sheet(sheet_id, sheet = "Database TPV")
 
 new_db = read_csv('data.csv')

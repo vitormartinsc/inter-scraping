@@ -3,6 +3,10 @@ library(googlesheets4)
 library(readxl)
 library(lubridate)
 
+# Carrega configurações
+source("config.R")
+load_env()
+
 load_packages <- function() {
   packages <- c("tidyverse", "ggplot2", "dplyr", "readr", "lubridate", "stringr")
   lapply(packages, require, character.only = TRUE)
@@ -23,7 +27,8 @@ load_packages()
 
 setwd("~/inter-scraping")
 
-sheet_id = '1jT-q_aEqR9OxcfsYna8UAAwXauH3-9QiM4lI-l6hHYU'
+# Usa função segura para obter ID da planilha
+sheet_id <- get_sheet_id("main")
 
 # Ler o arquivo Excel do Google Sheets com base no sheet_id
 full_db <- read_sheet(ss = sheet_id, sheet = "Página2") %>%

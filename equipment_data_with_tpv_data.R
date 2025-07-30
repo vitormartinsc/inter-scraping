@@ -36,9 +36,14 @@ library(googlesheets4)
 library(googledrive)
 library(openxlsx)
 
+# Carrega configurações
+source("config.R")
+load_env()
+
 df2 = read_csv('new_equipment_data.csv')
 
-sheet_id = '1t5e_LE6nGKMh25WWA-LuW2krzL-Wdw4xkHTYXnEvv44'
+# Usa função segura para obter ID da planilha
+sheet_id <- get_sheet_id("equipment")
 
 # 📥 Baixa o arquivo Excel do Google Drive
 temp_file <- tempfile(fileext = ".xlsx")

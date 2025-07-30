@@ -1,6 +1,7 @@
 from imapclient import IMAPClient
 import pyzmail
 import re
+import os
 from datetime import datetime, timedelta
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -49,9 +50,22 @@ def login_granito_com_2fa():
 
     navegador.get("https://gestao.granitopagamentos.com.br/Login/Index")
 
+    # Carrega credenciais das variáveis de ambiente
+    from dotenv import load_dotenv
+    load_dotenv()
+    
+    email = os.getenv("GRANITO_EMAIL")
+    password = os.getenv("GRANITO_PASSWORD")
+    
+    if not email or not password:
+        print("❌ ERRO: Credenciais do Granito não configuradas!")
+        print("Configure GRANITO_EMAIL e GRANITO_PASSWORD no arquivo .env")
+        navegador.quit()
+        return None
+
     # Preenche login
-    wait.until(EC.presence_of_element_located((By.ID, "email"))).send_keys("sandro.leao@creditoessencial.com.br")
-    navegador.find_element(By.ID, "password").send_keys("1011S@ndr0310")
+    wait.until(EC.presence_of_element_located((By.ID, "email"))).send_keys(email)
+    navegador.find_element(By.ID, "password").send_keys(password)
     wait.until(EC.element_to_be_clickable((By.ID, "btnLogin"))).click()
 
     # Interage com o modal 2FA

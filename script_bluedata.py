@@ -4,11 +4,10 @@
 Script para processamento de dados Granito - BluedataUser
 Desenvolvido para conexão SFTP e conversão de arquivos TXT para CSV
 
-Usuário: bluedatauser
-Senha: BlueData@25
+ATENÇÃO: Configure o arquivo .env com suas credenciais antes de usar!
 
 Instruções de uso:
-1. Configure as variáveis abaixo com seus caminhos desejados
+1. Copie .env.example para .env e configure as credenciais
 2. Execute o script: python script_bluedata.py
 3. Os arquivos CSV serão gerados na pasta especificada
 """
@@ -17,17 +16,28 @@ import paramiko
 import os
 import csv
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Carrega variáveis de ambiente
+load_dotenv()
+
+# Configurações SFTP (agora via variáveis de ambiente para BlueData)
+SFTP_HOST = os.getenv("SFTP_HOST_BLUEDATA")
+SFTP_PORT = int(os.getenv("SFTP_PORT_BLUEDATA", 22))
+SFTP_USER = os.getenv("SFTP_USER_BLUEDATA")
+SFTP_PASS = os.getenv("SFTP_PASS_BLUEDATA")
+SFTP_REMOTE_DIR = os.getenv("SFTP_REMOTE_DIR_BLUEDATA")
+
+# Verificação de credenciais
+if not all([SFTP_HOST, SFTP_USER, SFTP_PASS, SFTP_REMOTE_DIR]):
+    print("❌ ERRO: Credenciais SFTP BlueData não configuradas!")
+    print("Por favor, configure as variáveis SFTP_HOST_BLUEDATA, SFTP_USER_BLUEDATA,")
+    print("SFTP_PASS_BLUEDATA e SFTP_REMOTE_DIR_BLUEDATA no arquivo .env")
+    exit(1)
 
 # =============================================================================
 # CONFIGURAÇÕES - ALTERE CONFORME NECESSÁRIO
 # =============================================================================
-
-# Configurações do servidor SFTP
-SFTP_HOST = "18.188.31.230"  # Servidor SFTP
-SFTP_PORT = 22
-SFTP_USER = "bluedatauser"
-SFTP_PASS = "BlueData@25"
-SFTP_REMOTE_DIR = "/home/ediuser/uploads"  # Pasta remota onde estão os arquivos TXT
 
 # Configurações locais
 LOCAL_TXT_DIR = "./dados_txt"      # Pasta para salvar arquivos TXT baixados
