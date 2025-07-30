@@ -1,2 +1,37 @@
 /database
 .env
+.env.*
+
+# Chaves privadas e certificados
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Arquivos de configuração com credenciais
+config.json
+secrets.json
+credentials.json
+auth.json
+
+# Logs que podem conter informações sensíveis
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Histórico do R
+.Rhistory
+.RData
+.Ruserdata
