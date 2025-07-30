@@ -21,7 +21,7 @@ format_cpf_cnpj <- function(x) {
 
 load_packages()
 
-setwd("C:/Users/vitor/inter-scraping")
+setwd("~/inter-scraping")
 
 sheet_id = '1jT-q_aEqR9OxcfsYna8UAAwXauH3-9QiM4lI-l6hHYU'
 

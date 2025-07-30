@@ -84,7 +84,7 @@ def main():
     driver = webdriver.Chrome(options=options)
 
     cpf_cnpj_df = pd.read_excel('Credito Essencial Clientes_ Transações.xlsx')
-    cpf_cnpj_data = cpf_cnpj_df['cpf/cnpj']
+    cpf_cnpj_data = cpf_cnpj_df['cpf_cnpj']
 
     for cpf_cnpj in cpf_cnpj_data:
         process_user_data(driver, download_dir, cpf_cnpj, start_date, end_date, base_dir)

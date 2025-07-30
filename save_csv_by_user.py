@@ -141,8 +141,8 @@ def main():
     download_dir = os.path.expanduser('~/Downloads')  # Caminho padrão do Linux
     database_dir = os.path.join(os.getcwd(), 'database')
     os.makedirs(database_dir, exist_ok=True)
-    start_date = datetime.strptime('01/06/2025', '%d/%m/%Y')
-    end_date = datetime.strptime('28/06/2025', '%d/%m/%Y')
+    start_date = datetime.strptime('27/07/2025', '%d/%m/%Y')
+    end_date = datetime.strptime('31/07/2025', '%d/%m/%Y')
     
     # Selenium com ChromeDriver Manager
     options = Options()
