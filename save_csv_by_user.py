@@ -8,7 +8,7 @@ from selenium.webdriver.chrome.service import Service
 import os
 import time
 import pandas as pd
-from datetime import datetime, timedelta
+from datetime import datetime
 
 def sanitize_filename(s):
     return ''.join(c for c in str(s) if c.isalnum() or c in (' ', '_', '-')).rstrip()
@@ -141,8 +141,8 @@ def main():
     download_dir = os.path.expanduser('~/Downloads')  # Caminho padrão do Linux
     database_dir = os.path.join(os.getcwd(), 'database')
     os.makedirs(database_dir, exist_ok=True)
-    start_date = datetime.strptime('27/07/2025', '%d/%m/%Y')
-    end_date = datetime.strptime('31/07/2025', '%d/%m/%Y')
+    start_date = datetime.strptime('01/08/2025', '%d/%m/%Y')
+    end_date = datetime.strptime('05/08/2025', '%d/%m/%Y')
     
     # Selenium com ChromeDriver Manager
     options = Options()
