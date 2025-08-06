@@ -47,7 +47,14 @@ def load_config():
     Carrega configurações (equivalente ao config.R)
     """
     try:
-        with open('../config/config.json', 'r') as f:
+        # Determina o diretório base do projeto
+        current_dir = Path.cwd()
+        if current_dir.name == 'python-scripts':
+            config_path = '../config/config.json'
+        else:
+            config_path = 'config/config.json'
+            
+        with open(config_path, 'r') as f:
             config = json.load(f)
         return config
     except FileNotFoundError:
@@ -57,7 +64,14 @@ def load_config():
                 "main_sheet_id": "seu_sheet_id_aqui"
             }
         }
-        with open('../config/config.json', 'w') as f:
+        # Salva no local correto baseado no diretório atual
+        current_dir = Path.cwd()
+        if current_dir.name == 'python-scripts':
+            config_path = '../config/config.json'
+        else:
+            config_path = 'config/config.json'
+            
+        with open(config_path, 'w') as f:
             json.dump(config, f, indent=2)
         return config
 
@@ -73,9 +87,16 @@ def get_google_sheets_client():
             'https://www.googleapis.com/auth/drive'
         ]
         
+        # Determina o caminho das credenciais baseado no diretório atual
+        current_dir = Path.cwd()
+        if current_dir.name == 'python-scripts':
+            credentials_path = '../config/credentials.json'
+        else:
+            credentials_path = 'config/credentials.json'
+        
         # Carrega as credenciais do Service Account
         credentials = Credentials.from_service_account_file(
-            '../config/credentials.json',
+            credentials_path,
             scopes=SCOPES
         )
         
@@ -135,14 +156,20 @@ def write_google_sheet(df, sheet_id, sheet_name="Página2"):
         # Prepara o DataFrame para envio
         df_to_send = df.copy()
         
-        # Converte todas as colunas de data para o formato YYYY-MM-DD que o Google Sheets reconhece
+        # Converte todas as colunas de data para o formato brasileiro dd/mm/yyyy que o Google Sheets reconhece
         for col in df_to_send.columns:
             if pd.api.types.is_datetime64_any_dtype(df_to_send[col]):
-                # Converte para formato de data que o Google Sheets entende
-                df_to_send[col] = df_to_send[col].dt.strftime('%Y-%m-%d')
+                # Converte para formato brasileiro dd/mm/yyyy
+                df_to_send[col] = df_to_send[col].apply(
+                    lambda x: x.strftime('%d/%m/%Y') if pd.notna(x) and str(x) != 'NaT' else ''
+                )
         
         # Substitui valores NaN por strings vazias
         df_to_send = df_to_send.fillna('')
+        
+        # ⚠️ ATENÇÃO: Limpar a planilha pode remover dados históricos limpos
+        print("⚠️ AVISO: Esta operação irá sobrescrever TODOS os dados do Google Sheets")
+        print("   Se você restaurou dados limpos, eles serão perdidos!")
         
         # Limpa a planilha
         worksheet.clear()
@@ -158,11 +185,11 @@ def write_google_sheet(df, sheet_id, sheet_name="Página2"):
                 col_letter = chr(64 + col_idx)  # A=1, B=2, etc.
                 range_name = f'{col_letter}2:{col_letter}{len(df_to_send) + 1}'
                 
-                # Aplica formato de data
+                # Aplica formato de data brasileiro
                 worksheet.format(range_name, {
                     "numberFormat": {
                         "type": "DATE",
-                        "pattern": "yyyy-mm-dd"
+                        "pattern": "dd/mm/yyyy"
                     }
                 })
                 print(f"Formatação de data aplicada na coluna {col_name} ({range_name})")
@@ -225,7 +252,46 @@ def main():
             
             # Processa coluna Data
             if 'Data' in full_db.columns:
-                full_db['Data'] = pd.to_datetime(full_db['Data'], errors='coerce')
+                # Tenta converter datas no formato brasileiro (dd/mm/yyyy)
+                print("Convertendo datas do formato brasileiro...")
+                try:
+                    # Primeiro tenta formato brasileiro
+                    full_db['Data'] = pd.to_datetime(full_db['Data'], format='%d/%m/%Y', errors='coerce')
+                    
+                    # Conta sucessos na primeira tentativa
+                    successful_first = (~full_db['Data'].isna()).sum()
+                    print(f"Conversão formato brasileiro: {successful_first} datas convertidas")
+                    
+                    # Para valores que falharam, tenta formato internacional
+                    mask_failed = full_db['Data'].isna()
+                    if mask_failed.any():
+                        print(f"Tentando conversão alternativa para {mask_failed.sum()} datas...")
+                        # Tenta outros formatos comuns
+                        failed_data = full_db.loc[mask_failed, 'Data']
+                        
+                        # Tenta formato ISO (yyyy-mm-dd)
+                        full_db.loc[mask_failed, 'Data'] = pd.to_datetime(
+                            failed_data, format='%Y-%m-%d', errors='coerce'
+                        )
+                        
+                        # Se ainda há falhas, tenta conversão genérica
+                        mask_still_failed = full_db['Data'].isna()
+                        if mask_still_failed.any():
+                            print(f"Tentando conversão genérica para {mask_still_failed.sum()} datas...")
+                            full_db.loc[mask_still_failed, 'Data'] = pd.to_datetime(
+                                full_db.loc[mask_still_failed, 'Data'], 
+                                errors='coerce', dayfirst=True
+                            )
+                        
+                except Exception as e:
+                    print(f"Erro na conversão de datas: {e}")
+                    # Fallback para conversão genérica com formato brasileiro
+                    full_db['Data'] = pd.to_datetime(full_db['Data'], errors='coerce', dayfirst=True)
+                
+                # Verifica quantas datas nulas restaram
+                null_dates = full_db['Data'].isna().sum()
+                valid_dates = len(full_db) - null_dates
+                print(f"Resultado final: {valid_dates} datas válidas, {null_dates} valores nulos")
             
             print(f"Dados do Google Sheets carregados: {len(full_db)} registros")
     
@@ -311,7 +377,7 @@ def main():
     result_db = pd.DataFrame({
         'CPF/CNPJ': final_db['cpf_cnpj'],
         'Valor': final_db['value'],
-        'Data': final_db['date'].dt.strftime('%Y-%m-%d') if 'date' in final_db.columns else '',
+        'Data': final_db['date'],  # Mantém como datetime por enquanto
         'Column 10': np.nan,  # Substitua por coluna real se necessário
         'Meio de Pagamento': final_db['payment_method'],
         'Nº de Parcelas': final_db['installments'],
@@ -333,8 +399,12 @@ def main():
         'Id': final_db['Id']
     })
     
-    # Converte Data para datetime
-    result_db['Data'] = pd.to_datetime(result_db['Data'], errors='coerce')
+    
+    # Garante que a Data seja datetime e trata valores nulos
+    if 'Data' in result_db.columns:
+        # Se não é datetime, converte
+        if not pd.api.types.is_datetime64_any_dtype(result_db['Data']):
+            result_db['Data'] = pd.to_datetime(result_db['Data'], errors='coerce')
     
     # Remove colunas lógicas
     result_db = result_db.select_dtypes(exclude=['bool'])
@@ -416,9 +486,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # Muda para o diretório do script
-    os.chdir(Path(__file__).parent)
-    
     print("=== INICIANDO SCRIPT ===")
     
     # Executa função principal

@@ -2,6 +2,10 @@
 .env
 .env.*
 
+# Ambiente virtual
+venv/
+.env
+.env.local
 # Chaves privadas e certificados
 *.pem
 *.key
